@@ -1,0 +1,57 @@
+name,type,unit_type,length,output,MAS,SS,r4ss,Ind1,Ind2,,AMAK Input,AMAK Output (from For_R.rep)
+number of forecast years,scalar_in,,1,n_forecast_years,,,,,,,n_proj_yrs,Projection_years
+number of fleets,scalar_in,,1,n_fleets,,,,,,,nfsh,
+number of morphs,scalar_in,,1,n_growth_morphs,,,,,,,,
+number of seasons,scalar_in,,1,n_seasons,,,,,,,,
+number of length bins,scalar_in,,1,n_len_bins,,,,,,,numbers of length intervals (nlength),
+number of sexes,scalar_in,,1,n_sexes,,,,,,,,
+recruitment groups,scalar_in,,1,n_recr_groups,,,,,,,,
+number of years,scalar_in,,1,n_years,,,,,,,,
+ages,scalar_in,,1,n_ages,,,,,,,n_ages,
+fleet,index,,n_fleets,,,,,,,,,
+growth morph,index,,n_growth_morphs,,,,,,,,,
+Year,index,year,n_years,year,,,,,,,styr and endyr,Yr
+Spawning stock biomass,derived quantity,bio,n_years,spawn_stock_bio,,,,,,,,SSB
+Instantaneous fishing mortality,derived quantity,unitless,n_years ,fishing_mort,,,,,,,,Derived from TotF (e.g. Annual aprical F) 
+Spawning potential ratio,derived quantity,unitless,1,spawn_pot_ratio,,SPRratio,,,,,,phizero (virgin SPR)
+Total biomass (males +females),derived quantity,bio,n_years,tot_bio,,TotBio,,,,,,TotBiom
+Total catch (m+f),derived quantity,"bio, numbers",n_years,tot_catch,,TotCatch,,,,,,Pred_catch_ from each fleet
+Catch,data,"bio, numbers",n_years,catch_index,catch_biomass,catch,,,,,catch,Obs_catch_ from each fleet
+season,index,season,n_seasons,season,,,,,,,,
+sex,index,sex,n_sexes,sex,,,,,,,,
+age,index,age,n_ages,age,,,,,,,,
+survey_index,data,"bio, numbers",n_years,survey_index,survey_biomass,,,,,,biom_ind,Obs_Survey_1 (from a survey)
+age composition,data,proportion,"(n_years,n_ages)",age_comp,<catch/survey>_proportion_at_age,,,,,,page_<fsh/ind>,pobs_<fsh/ind>_  for observation or phat_<fsh/ind>_ for prediction
+length composition,data,proportion,"(n_years,n_len_bins)",length_comp,N/A,,,,,,,
+conditional age-at-length composition,data,proportion,"(n_years*n_ages,n_len_bins)",caal_comp,N/A,,,,,,,
+L2,parameter,cm,1,l_amax,lmax,,L_at_Amax_,sex,morph,,,
+L1,parameter,cm,1,l_amin,lmin,,L_at_Amin_,sex,morph,,,
+Wtlen coefficient,parameter,,1,wt_len_alpha,alpha_f,,Wtlen_1_,sex,,,,
+Wtlen exponent,parameter,,1,wt_len_beta,beta_f,,Wtlen_2_,sex,,,,
+M,parameter,unitless,,nat_mort,M,,NatM_p_,parnum,sex,morph,Natural_Mortality/M,M
+log(R0),parameter,bio,1,log_r0,R0,,SR_LN(R0),,,,,log_Rzero (from amak.std)
+Steepness,parameter,,,steepness,g,,SR_BH_steep,,,,Steepness,Steep
+SigmaR,parameter,,1,sigma_r,sigma_r,,SR_sigmaR,,,,SigmaR,Sigmar
+Recruitment rho,parameter,,1,recr_autocorr,rho,,SR_autocorr,,,,,
+K,parameter,,1,growth_k,c,,VonBert_K_,sex,morph,,K,
+age-sel parameters,parameter,,n_age_selex,sel_age,a50,,AgeSel_P,parnum,fleet,,inflection,sel50_<fsh/ind> (from amak.std)
+length-sel parameters,parameter,,n_len_selex,sel_length,s,,Size_sel_P,parnum,fleet,,,
+catchability,parameter,,,q,,,Q_,type,parnum,year/seas/fleet,catchability/q,Q_
+log catchability,parameter,,,lnq,,,LnQ_,type,parnum,year/seas/fleet,,log_q_
+growth CV young,parameter,,,cv_young,,,CV_young_,sex,group,,,
+growth CV old,parameter,,,cv_old,,,CV_old_,sex,group,,,
+age at 50% maturity,parameter,age,,mat_age_50,,,Mat50%_,sex,,,,
+slope at 50% maturity,parameter,,,mat_slope,,,Mat_slope_,sex,,,maturity vector,mature_a vector
+length at 50% maturity,parameter,cm,,mat_len_50,,,,,,,,
+stock-recruit environmental link,parameter,,,recr_env_link,,,SR_envlink,,,,,
+stock-recruit offset,parameter,,n_recr_group,recr_offset,,,_offset,,,,,
+recruitment distribution,parameter,,n_recr_group,recr_dist,,,RecrDist_,ind,group,,,
+early recruitment dev,parameter,,n_ages,recr_dev,,,Early_RecrDev_,year,early,,,rec_dev (from amak.std)
+main recruitment dev,parameter,,n_years,recr_dev,,,Main_RecrDev_,year,main,,,rec_dev (from amak.std)
+initial early recruitment dev,parameter,,n_ages,recr_dev,,,Early_InitAge_,age,init,,,
+forecast recruitment dev,parameter,,n_forecast_years,recr_dev_forecast,,,ForeRecr_,year,forecast,,,rev_dev_future (from amak.std)
+implementation error,parameter,,n_forecast_years,impl_error_forecast,,,Impl_err_,forecast_year,,,,
+intercept of fecundity relationship,parameter,,,eggs_kg_intercept,,,Eggs/kg_inter_Fem,sex,,,,
+slope of fecundity relationship,parameter,,,eggs_kg_slope,,,Eggs/kg_slope_wt_Fem,sex,,,,
+female,index,,1,1,,,Fem,,,,,
+male,index,,1,2,,,Mal,,,,,
