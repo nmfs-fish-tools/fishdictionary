@@ -1,4 +1,4 @@
-name,purpose,programmatic type,unittype,length,output,MAS,SS,r4ss,Ind1,Ind2,,AMAK Input,AMAK Output (from ForR.rep)
+description,purpose,data type,unittype,length,name,MAS,SS,r4ss,index1,index2,index3,AMAK Input,AMAK Output (from ForR.rep)
 number of forecast years,scalar,integer,integer,1,Nforecastyears,,,,,,,nprojyrs,Projectionyears
 number of fleets,scalar,integer,integer,1,Nfleets,,,,,,,nfsh,
 number of morphs,scalar,integer,integer,1,Ngrowthmorphs,,,,,,,,
