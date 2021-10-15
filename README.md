@@ -19,3 +19,5 @@ Explanation of column headers:
 - Required (not yet filled out): Enter y/n to indicate whether this field is required.
 - Accepts null value (not yet filled out): This required to run calculations on your data. Indicate y/n if null value is allowable.
 (A note on null values: Null is the absence of a recorded value for a field. A null value differs from a value of zero in that zero may represent the measure of an attribute, while a null value indicates that no measurement has been taken.)
+
+[Manuscript](https://docs.google.com/document/d/10FzlwMlHo6fe5Rh3F-HTWNMWzt4GAM8iaqe8dxBl0ks/edit?usp=sharing) 
