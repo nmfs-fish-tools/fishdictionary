@@ -1,0 +1,11 @@
+,attributeName,attributeDefinition,numberType,unit,formatString,definition
+1,landings,Catch that was recorded dockside,integer,tons,NA,landings of fish in weight
+2,Nyears,number of years,integer,NA,NA,number of years
+3,Nages,ages,integer,NA,NA,number of ages
+4,Fleet,fleet,integer,NA,NA,fleet value
+5,Year,Year,integer,year,YYYY,year value
+6,Spawnstockbio,Spawning stock biomass,double,ton,NA,spawning stock biomass in weight
+7,Fishingmort,Instantaneous fishing mortality,double,NA,NA,instantaneous annual F
+8,Totbio,Total biomass (males +females),double,ton,NA,Total stock biomass in weight
+9,Totcatch,Total catch (m+f) in weight,double,ton,NA,Total catch (all the dead fish)
+10,season,season,integer,NA,NA,The season

@@ -1,0 +1,7 @@
+attributeName,code,definition
+type,integer,integer
+type,string,string
+type,double,double
+unit,tons,tons
+unit,thousands,thousands
+unit,individuals,individuals
