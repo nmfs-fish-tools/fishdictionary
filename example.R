@@ -12,5 +12,5 @@ output <- text_mining(
   lower_case=TRUE,
   remove_numbers=TRUE,
   remove_common_words=TRUE,
-  custom_stopwords=NULL
+  custom_stopwords=c("model","assessment","data","figure","sedar","section")
 )
