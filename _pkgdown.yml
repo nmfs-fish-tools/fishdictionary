@@ -1,0 +1,32 @@
+navbar:
+  structure:
+    left:
+    - home
+    - reference
+    - github
+    - issue
+    - article
+
+  components:
+    home:
+      icon: fas fa-home fa-lg
+      href: index.html
+
+    reference:
+      text: Functions
+      icon: far fa-file-code fa-lg
+      href: reference/index.html
+
+    github:
+      text: Source Code
+      icon: fab fa-github fa-lg
+      href: https://github.com/nmfs-fish-tools/data_dictionary/
+
+    issue:
+      text: Issues
+      icon: fas fa-question-circle fa-lg
+      href: https://github.com/nmfs-fish-tools/data_dictionary/issues/
+
+    articles:
+      text: Vignettes
+      icon: fas fa-file-contract fa-lg
