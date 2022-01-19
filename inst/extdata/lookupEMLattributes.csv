@@ -1,0 +1,4 @@
+attributeName,attributeDefinition,numberType,measurementScale,unit,formatString,domain,definition
+landings,catch,real,ratio,ton,NA,numericDomain,NA
+haul_date,date caught,NA,dateTime,NA,YYYY-MM-DD,dateTimeDomain,NA
+fleet,the name of the fleet,NA,nominal,NA,NA,textDomain,"""can be summer n or whatever"""

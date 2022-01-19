@@ -1,4 +1,0 @@
-attributeName,attributeDefinition,numberType,measurementScale,unit,formatString,domain,definition,missingValueCode,missingValueCodeExplanation
-landings,catch,type,ratio,"""ton""",NA,numericDomain,NA,NA,NA
-haul_date,date caught,NA,dateTime,NA,YYYY-MM-DD,dateTimeDomain,NA,NA,NA
-fleet,the name of the fleet,NA,nominal,NA,NA,textDomain,"""can be summer n or whatever""","""""",NA

@@ -1,0 +1,140 @@
+Biomass (B): Model predicted weight (mt) of all fish within a stock. If referring to a certain portion of the stock, it should be made clear what portion of the stock the biomass pertains to using a modifying word or clause. 
+Examples: spawning stock biomass, age three plus biomass, exploitable biomass, January 1 biomass
+Rationale: Biomass is often undefined in terms of what year classes and sexes it includes. Typically, the age classes that are included will precede the word “biomass” in the sentence. 
+Alternatives: total biomass, abundance which is in numbers not mt, BMWETWT (ICES), B_index (ICES), Biomass index
+Range of possible values:
+ICES code type: StockSizeIndicator
+Units: mt
+Spawning Stock Biomass (SSB): Model predicted weight (mt) of all sexually mature fish within the stock, which is a function of maturity, sex, and individual fish weight (kg).
+Examples: 
+Rationale: This quantity is key to projecting populations assuming these are the fish contributing to reproduction. 
+Alternatives: NA Spawning Stock Output (eggs)
+Range of possible values: zero to infinity
+ICES code type:
+Units: mt
+Unfished: Levels of the stock or population parameters or derived quantities prior to the advent of industrialized fishing, i.e., can include native exploitation. Based on term search across U.S. assessments, there is a fairly equal split between the term unfished (140) and equilibrium (138) with lower usage of virgin (77). No ICES code was found for either of these three terms.
+Examples: unfished spawning stock biomass
+Rationale: 
+Alternatives: virgin, equilibrium
+Range of possible values: various
+Units: various
+ICES code type: NA
+Recruitment: The transition of fish to a different life stage (Lorenzen and Camp, 2019).
+Examples: 
+Rationale: The term recruitment is also used with respect to fish reaching a legal size and becoming vulnerable to harvesting though we will label it as such rather than recruitment to the fishery.
+Alternatives: age-0 fish
+Range of possible values: zero to infinity
+Units: numbers
+ICES code type: StockDataType
+Catch: Everything that died due to fishing, i.e., total fishing mortality which includes both landed and discarded fish.
+Examples: Catch (ICES), RecreationalCatch (ICES)
+Rationale: 
+Alternatives: total mortality
+Range of possible values: zero to infinity
+Units: numbers or biomass, where the units are always explicitly stated.
+ICES code type: stockdatatype
+Landings: Catch that was recorded dockside. 
+Examples: 
+Rationale: 
+Alternatives: retained catch
+Range of possible values: zero to infinity
+ICES code type:
+Units: numbers or biomass, where the units are always explicitly stated. 
+Catch per Unit Effort (CPUE): A time series vector (of length years unless there are missing data) corresponding to the amount of catch per standard unit of fishing effort, e.g., 1000 hooks per day or per hour of trawling, as a  measure of relative abundance.
+Examples: survey time series, standardized fishery catch time series
+Rationale: many models use index for a survey and CPUE for fishery-dependent data, where they should both be CPUE.
+Alternatives: catch rate, index of abundance
+Range of possible values: 0-infinity
+Units: relative
+ICES code type: C - data calculated as CPUE (number per hour) with sub-codes if CPUE is a measure of lengths or ages within a year: CPUE Age (1) and CPUE Length (2). The code type is TS_DataType for C and IC_DataType for CPUE Age (1) or Length (2)
+Maximum sustainable yield (MSY): A maximum level of yield that can be continuously taken from an exploited stock without long-term depletion under average environmental conditions. The MSY for a stock can be defined or estimated based on biological parameters (e.g., natural mortality and stock productivity) or a management proxy value (e.g., the maximum yield at 40% of unfished biomass) . 
+Examples: 
+Rationale: 
+Alternatives: MSYproxy  
+Range of possible values:
+Units:  biomass/metric tons or numbers
+ICES code type: CatchScenariosBasis
+Instantaneous mortality rate (Z): Z is probably the most universally used notation for a given parameter across all disciplines for models that include mortality, how did we agree on this and when?
+Examples: 
+Rationale: 
+Alternatives: 
+Range of possible values: lower bound of 0
+Units: mortality per year (yr-1)
+ICES code type: Couldn’t find an ICES equivalent
+Instantaneous fishing mortality rate (F): Many other platforms distinguish between different F. For example, looking at ASAP, we have Average F (across a certain age range), Total F (by age), N-weighted, B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely does) incorporate selectivity. Apical F - at the peak of selectivity curve?
+Examples: 
+Rationale:
+Alternatives: harvest rate, exploitation rate
+Range of possible values:
+ICES code type:
+Units:  mortality per year (yr-1)
+FMSY: The fishing mortality rate (F) that achieves the maximum sustainable yield (MSY). 
+Examples: 
+Rationale: An example of a derived quantity / parameter with subscript notation.
+Alternatives: FPROXY
+Range of possible values: greater than zero
+Units: a unitless rate (e.g., catch at MSY / spawning stock biomass at MSY)
+ICES Code Type: FMSYranges- range of F resulting in BMSY, Code Type of CatchScenarioBasis 
+Spawner per recruit (SPR): The ratio of the amount of spawning biomass produced by a cohort over its lifespan under a specific fishing regime relative to the spawning biomass produced over the cohort's lifespan under no fishing.
+Examples: SPR30% 
+Rationale:
+Alternatives: Spawning Potential Ratio (ICES), Spawning Stock Biomass per Recruit (ICES)
+Range of possible values: zero to 1
+Units: relative
+ICES code type: Couldn’t find an ICES equivalent from the ICES Vocabularies. ICES Spawning Stock Biomass per Recruit (SSB/R or S/R) description from the Acronyms and Terminology document: expected lifetime contribution to the spawning stock biomass for a recruit of a specific age. 
+Weight (kg): individual body weight of a fish that may be directly measured or averaged across a sample. ICES distinguishes between the types of weight with different names - individual vs pooled
+Examples: 
+Rationale: 
+Alternatives: mass, Weight (ICES) refers to clustered samples only, WeightMeasured and Weightg in grams for individual weights, catch weight (ICES)
+Range of possible values: greater than zero
+Units: kilograms
+ICES code type: SamplingUnit
+Length composition: A matrix of size of observed lengths that is typically summarized by year (or season), data source, and across specified length range.
+Examples: 
+Rationale: 
+Alternatives: length frequency
+Range of possible values: proportions 0 - 1, non-standardized zero to infinity
+ICES code type: 
+Units: numbers or proportions
+Age composition: a matrix of size number of ages (columns) x number of years (ages) in which each entry is the proportion of fish in each age group in a given year, such that rows sum to 1. The total count of age composition|age frequency was 272 in survey assessment documents. The term composition had the highest occurrence (496) of option in the surveyed assessment documents, where frequency had 138 and observation had 221.
+Examples: 
+Rationale: 
+Alternatives: age frequency, age observation
+Range of possible values: Range of possible values: proportions 0 - 1, non-standardized zero to infinity
+Units: 
+ICES Code Type: NA Nothing was returned using the following search terms: frequency, observation, composition, age (under survey data).
+Forecast: projection of model to generate derived quantities after the final data year based on specific assumptions around future biology, selectivity, and recruitment
+Examples: short-term forecast
+Rationale: 
+Alternatives: projection
+Range of possible values:
+Units: 
+ICES code type: StockCategory (e.g. Category 1. Data rick, fully accepted analytical assessment and short-term forecast), ICES_Stock_Category
+Sex: Sex of a fish.
+Examples: 
+Rationale: 
+Alternatives: gender
+Range of possible values: F, M, or U; ICES: Female, Male, Transitioning, undetermined
+Units: 
+ICES code type: ValueUnitOrScale
+Logr0: Natural log of the unfished recruitment levels, where the original value (r0) is in 1000’s of recruits.
+Examples: 
+Rationale: 
+Alternatives: lnR0, R0, log(R0), R0
+Range of possible values:
+Units: 
+ICES code type:
+Plus group: fish of a designated age and older where the life history of all ages in the group are treated similarly because the ability to predict age from length is difficult given the lack of increase in length or there is limited data to define differences.
+Examples: 
+Rationale: 
+Alternatives: 
+Range of possible values: age 1 or greater
+Units: whole year age
+ICES Code Type: Code - “+” and “plusgroup” and Code Type: TS_PlusGr
+Cohort: Individuals of a stock born in the same spawning season.
+Examples: 
+Rationale: 
+Alternatives: recruit
+Range of possible values:
+Units: 
+ICES code type: Couldn’t find an ICES equivalent from the ICES Vocabularies
