@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "StockAssessmentDataDictionary",
+    "description": "Stock Assessment Data Dictionary Json Schema",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Name of the term",
+            "type": "string",
+            "minLength": 1
+        },
+        "description": {
+            "description": "Description of the term",
+            "type": "string",
+            "minLength": 1
+        },
+        "Examples": {
+            "description": "Detailed information illustrating something that is characteristic of its kind or a general rule of thumb such that readers can grasp the concept of the term",
+            "type": "string"
+        },
+        "ICES code type": {
+            "description": "ICES code type from https://vocab.ices.dk/",
+            "type": "string"
+        },
+        "Units": {
+            "description": "Unit of the term",
+            "type": "string"
+        },
+        "Raionale": {
+            "description": "Reasons for why the term was included",
+            "type": "string"
+        },
+        "Alternatives": {
+            "description": "Synonyms along with the potential reference for what framework uses the alternative. Sources for each alternative, in parentheses, will help build the language translator.",
+            "type": "string"
+        },
+        "Range of possible values": {
+            "description": "min and max values of the term",
+            "type": "string"
+        }
+    },
+    "required": ["name", "description", "Units"]
+}
