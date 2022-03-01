@@ -1,8 +1,8 @@
-Biomass (B): Model predicted weight (mt) of all fish within a stock. If referring to a certain portion of the stock, it should be made clear what portion of the stock the biomass pertains to using a modifying word or clause. 
-Examples: spawning stock biomass, age three plus biomass, exploitable biomass, January 1 biomass
-Rationale: Biomass is often undefined in terms of what year classes and sexes it includes. Typically, the age classes that are included will precede the word “biomass” in the sentence. 
-Alternatives: total biomass, abundance which is in numbers not mt, BMWETWT (ICES), B_index (ICES), Biomass index
-Range of possible values:
+Biomass (B): Weight of fish within a stock. If referring to a certain portion of the stock, it should be made clear what portion of the stock the biomass pertains to.
+Examples: spawning biomass, age three-plus biomass, exploitable biomass, January 1 biomass
+Rationale: Measurements of biomass should be better defined making it clear what year classes and sexes it includes. Historically, verbose labels, e.g., January 1 biomass of age-three plus fish in 2022, are not typically used; instead, labels are short, e.g., 2022 3+ biomass. Additional ambiguity can come from the lack of knowledge regarding the unit of measurement, which should always be metric tons. Some alternatives are not interchangeable because they are in different units, e.g., abundance (numbers of fish).
+Alternatives: stock biomass, total biomass, abundance, biomass wet weight, biomass index
+Range of possible values: 0--Inf
 ICES code type: StockSizeIndicator
 Units: mt
 Spawning Stock Biomass (SSB): Model predicted weight (mt) of all sexually mature fish within the stock, which is a function of maturity, sex, and individual fish weight (kg).
