@@ -5,12 +5,12 @@ Alternatives: stock biomass, total biomass, abundance (numbers of fish), biomass
 Range of possible values: 0--Inf
 ICES code type: StockSizeIndicator
 Units: mt
-Spawning Stock Biomass (SSB): Model predicted weight (mt) of all sexually mature fish within the stock, which is a function of maturity, sex, and individual fish weight (kg).
-Examples: 
-Rationale: This quantity is key to projecting populations assuming these are the fish contributing to reproduction. 
-Alternatives: NA Spawning Stock Output (eggs)
-Range of possible values: zero to infinity
-ICES code type:
+Spawning Biomass (SB): Weight of all sexually mature fish within the stock, which is a function of maturity, sex, and individual fish weight (kg). In the even that a maturity ogive is not available, then spawning biomass will be the sum of the biomass of all fish for which their age or size class is greater than the age or size at which 50 percent of individuals are mature. Spawning biomass provides a measure of the reproductive capacity of the stock and ability to project the biomass assuming these are the fish contributing to reproduction.
+Examples: female spawning biomass
+Rationale: Spawning biomass and spawning stock biomass have both been used historically, though the former is shorter without sacrificing clarity. For single-sex models, spawning biomass often pertains only to females but text should be specific, e.g., female spawning biomass. The alternative, spawning output, is only viable for species that exhibit multiple spawning events per fish within a time period and have pelagic eggs. 
+Alternatives: spawning stock biomass, spawning output (eggs), spawning stock output (eggs)
+Range of possible values: 0--Inf
+ICES code type: AdvScenarioDataType, StockSizeIndicator
 Units: mt
 Unfished: Levels of the stock or population parameters or derived quantities prior to the advent of industrialized fishing, i.e., can include native exploitation. Based on term search across U.S. assessments, there is a fairly equal split between the term unfished (140) and equilibrium (138) with lower usage of virgin (77). No ICES code was found for either of these three terms.
 Examples: unfished spawning stock biomass
