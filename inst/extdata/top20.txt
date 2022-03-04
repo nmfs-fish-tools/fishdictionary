@@ -19,28 +19,27 @@ Alternatives: virgin, initial, equilibrium, unfished equilibrium
 Range of possible values: 0--Inf
 Units:
 ICES code type: NA
-Recruitment: The transition of fish to a different life stage (Lorenzen and Camp, 2019).
-Examples: 
-Rationale: The term recruitment is also used with respect to fish reaching a legal size and becoming vulnerable to harvesting though we will label it as such rather than recruitment to the fishery.
+Recruits: The number of fish transitioning to a different life stage (Lorenzen and Camp, 2019), typically from that of a pre-juvenile stage that could experience density-dependent life-history processes to a juvenile stage without density-dependent processes.
+Examples: thousands of recruits, stock-recruitment relationship
+Rationale: Recruitment can also be used to describe fish reaching a legal size and becoming vulnerable to harvesting, though we will label it as such rather than recruitment to the stock. Age-0 fish are typically referred to as recruits but documentation should state the age at which fish are recruited because there is no standard.
 Alternatives: age-0 fish
-Range of possible values: zero to infinity
+Range of possible values: 0--Inf
 Units: numbers
 ICES code type: StockDataType
-Catch: Everything that died due to fishing, i.e., total fishing mortality which includes both landed and discarded fish.
-Examples: Catch (ICES), RecreationalCatch (ICES)
-Rationale: 
+Catch: Everything that died due to fishing, i.e., both landed and discarded fish.
+Examples: recreational catch
+Rationale: Landings and catch are sometimes thought to be interchangeable but they are not given that catch can also include bycatch or unwanted catch. 
 Alternatives: total mortality
-Range of possible values: zero to infinity
-Units: numbers or biomass, where the units are always explicitly stated.
-ICES code type: stockdatatype
-Landings: Catch that was recorded dockside. 
-Examples: 
-Rationale: 
-Alternatives: retained catch
-Range of possible values: zero to infinity
-ICES code type:
-Units: numbers or biomass, where the units are always explicitly stated. 
-Catch per Unit Effort (CPUE): A time series vector (of length years unless there are missing data) corresponding to the amount of catch per standard unit of fishing effort, e.g., 1000 hooks per day or per hour of trawling, as a  measure of relative abundance.
+Range of possible values: 0--Inf
+Units: mt, numbers
+ICES code type: CatchRegistration, stockdatatype
+Landings: Catch that was recorded dockside. Typically, this is catch that was brought to shore, sorted to species, recorded on a fish ticket after being weighed, and sold to a processing plant.
+Examples:
+Rationale: Landings and catch are sometimes thought to be interchangeable but they are not given that catch can also include bycatch or unwanted catch.  
+Alternatives: retained catch, wanted catch
+Range of possible values: 0--Inf
+ICES code type: AdviceType, AdvScenarioDataType, CatchRegistration, IC_CatchCategory, SampleOrigin
+Units: mt, numbers
 Examples: survey time series, standardized fishery catch time series
 Rationale: many models use index for a survey and CPUE for fishery-dependent data, where they should both be CPUE.
 Alternatives: catch rate, index of abundance
