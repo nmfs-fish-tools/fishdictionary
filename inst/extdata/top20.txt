@@ -68,13 +68,12 @@ Rationale:
 Alternatives: Spawning Potential Ratio (ICES), Spawning Stock Biomass per Recruit (ICES)
 Range of possible values: zero to 1
 Units: relative
-Weight (kg): individual body weight of a fish that may be directly measured or averaged across a sample. ICES distinguishes between the types of weight with different names - individual vs pooled
-Examples: 
-Rationale: 
-Alternatives: mass, Weight (ICES) refers to clustered samples only, WeightMeasured and Weightg in grams for individual weights, catch weight (ICES)
-Range of possible values: greater than zero
-Units: kilograms
-Length composition: A matrix of size of observed lengths that is typically summarized by year (or season), data source, and across specified length range.
+Weight: The individual body weight of a fish that may come from direct measurements or an average across a sample.
+Examples: average weight-at-age
+Rationale: The unit of measurement for the weight of individual fish can vary by country or even between sampling organizations. For example, some organizations measure fish weight in pounds rather than in kilograms and sometimes kilograms are reported using grams. The metric system is an internationally agreed-upon system of measurement and, more specifically, the International System of Units (SI) is used in science and should be used for fisheries science. Thus, measurements of mass should be reported in kilograms (kg).
+Alternatives: mass
+Range of possible values: 0--Inf
+Units: kg
 Examples: 
 Rationale: 
 Alternatives: length frequency
