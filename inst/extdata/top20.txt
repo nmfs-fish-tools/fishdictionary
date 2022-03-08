@@ -40,13 +40,12 @@ Rationale: Many models use the term index for a survey and CPUE for fishery-depe
 Alternatives: catch rate, index of abundance, standardized fishery catch time series
 Range of possible values: 0--Inf
 Units:
-Rationale: 
-Alternatives: MSYproxy  
-Range of possible values:
-Units:  biomass/metric tons or numbers
-Instantaneous mortality rate (Z): Z is probably the most universally used notation for a given parameter across all disciplines for models that include mortality, how did we agree on this and when?
-Examples: 
-Rationale: 
+Maximum Sustainable Yield (MSY): A maximum level of yield that can be continuously taken from an exploited stock without long-term depletion under average environmental conditions. It can be defined given biological parameters (e.g., natural mortality and stock productivity) or using proxies (e.g., the maximum yield at 40% of unfished biomass). Units depend on units of catches.
+Examples:
+Rationale: Many management frameworks are based on calculations of MSY despite difficulty in its estimation. Metrics such as fishing rate at MSY should be abbreviated using all upper case letters but this is not common practice as of yet. For example, sometimes you will see F_msy or some derivative thereof.
+Alternatives: msy, MSYproxy
+Range of possible values: 0--Inf
+Units: mt, numbers
 Alternatives: 
 Range of possible values: lower bound of 0
 Units: mortality per year (yr-1)
