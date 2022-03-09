@@ -46,15 +46,18 @@ Rationale: Many management frameworks are based on calculations of MSY despite d
 Alternatives: msy, MSYproxy
 Range of possible values: 0--Inf
 Units: mt, numbers
+Instantaneous mortality rate (Z): The sum of instantaneous natural mortality (M) and fishing mortality (F) rates or the fraction of the population that dies in a very short, i.e., instantaneous, period of time. Instantaneous rates are sometimes more easily interpreted as an annual rate, which can be done using the following formula: $A = 1 - e^{-x}$.
+Examples: An instantaneous mortality rate of 0.0 means that all individual survive and the resulting annual survival rate is 100%.
+Rationale: Standardizing notation for instantaneous rates of mortality is easy because Z appears to be one of the most well-adopted acronyms across a great number of disciplines.
 Alternatives: 
-Range of possible values: lower bound of 0
-Units: mortality per year (yr-1)
-Instantaneous fishing mortality rate (F): Many other platforms distinguish between different F. For example, looking at ASAP, we have Average F (across a certain age range), Total F (by age), N-weighted, B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely does) incorporate selectivity. Apical F - at the peak of selectivity curve?
-Examples: 
-Rationale:
-Alternatives: harvest rate, exploitation rate
-Range of possible values:
-Units:  mortality per year (yr-1)
+Range of possible values: 0--Inf
+Units: $time^{-1}$
+Instantaneous fishing mortality rate (F): Instantaneous exponential rate at which fish are being removed from the population due to fishing. Many other platforms distinguish between different F. For example, looking at ASAP, we have Average F (across a certain age range), Total F (by age), N-weighted, B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely does) incorporate selectivity. Apical F - at the peak of selectivity curve?
+Examples: Fun (ICES) is fishing mortality of unwanted catch
+Rationale: It is often not clear whether fishing mortality refers to the instantaneous rate or finite rate, where the latter would apply to a fixed time period. Some suggest using upper case for instantaneous rates and lower case for finite rates. For example an F of 0.5 would correspond to 40% of the population being removed or a finite rate of 0.4. Furthermore, F can sometimes pertain to just a range of the age structure and may or may not account for selectivity.
+Alternatives: harvest rate, exploitation rate, finite fishing mortality, apical F
+Range of possible values: 0--Inf
+Units: $time^{-1}$
 FMSY: The fishing mortality rate (F) that achieves the maximum sustainable yield (MSY). 
 Examples: 
 Rationale: An example of a derived quantity / parameter with subscript notation.
