@@ -58,13 +58,12 @@ Rationale: It is often not clear whether fishing mortality refers to the instant
 Alternatives: harvest rate, exploitation rate, finite fishing mortality, apical F
 Range of possible values: 0--Inf
 Units: $time^{-1}$
-FMSY: The fishing mortality rate (F) that achieves the maximum sustainable yield (MSY). 
-Examples: 
-Rationale: An example of a derived quantity / parameter with subscript notation.
-Alternatives: FPROXY
-Range of possible values: greater than zero
-Units: a unitless rate (e.g., catch at MSY / spawning stock biomass at MSY)
-Spawner per recruit (SPR): The ratio of the amount of spawning biomass produced by a cohort over its lifespan under a specific fishing regime relative to the spawning biomass produced over the cohort's lifespan under no fishing.
+Fishing mortality at maximum sustainable yield (FMSY): A biological reference point for fisheries management based on the fishing mortality rate (F) that achieves the maximum sustainable yield (MSY). 
+Examples:
+Rationale: The notation used for reference points of commonly calculated values is inconsistent. For example, some use subscripts where the subscript can be in either all capital letters or all lower-case letters, some use lower-case letters for the type of reference point, and some use all capital letters.
+Alternatives: Fproxy, F_msy, Fmsy
+Range of possible values: 0--Inf
+Units: $time^{-1}$
 Examples: SPR30% 
 Rationale:
 Alternatives: Spawning Potential Ratio (ICES), Spawning Stock Biomass per Recruit (ICES)
