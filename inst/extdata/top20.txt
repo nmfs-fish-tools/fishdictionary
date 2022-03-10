@@ -76,17 +76,18 @@ Rationale: The unit of measurement for the weight of individual fish can vary by
 Alternatives: mass
 Range of possible values: 0--Inf
 Units: kg
+Length composition: A matrix of proportions of observed lengths per length categories that are typically summarized by time period, data source, and sex.
 Examples: 
-Rationale: 
-Alternatives: length frequency
-Range of possible values: proportions 0 - 1, non-standardized zero to infinity
-Units: numbers or proportions
-Age composition: a matrix of size number of ages (columns) x number of years (ages) in which each entry is the proportion of fish in each age group in a given year, such that rows sum to 1. The total count of age composition|age frequency was 272 in survey assessment documents. The term composition had the highest occurrence (496) of option in the surveyed assessment documents, where frequency had 138 and observation had 221.
+Rationale: Composition is more commonly used than frequency but storing data as compositions removes information about the number of fish that were included in the sample. Typically, the sample size associated with a given composition will not be based on the number of fish and is instead based on the number of tows, and thus, it is important to store the data as frequencies rather than compositions such that information is not lost.
+Alternatives: length frequency, length observation
+Range of possible values: 0--1
+Units:
+Age composition: A matrix of proportions of observed ages per age categories that are typically summarized by time period, data source, and sex.
 Examples: 
-Rationale: 
+Rationale: Composition is more commonly used than frequency but storing data as compositions removes information about the number of fish that were included in the sample. Typically, the sample size associated with a given composition will not be based on the number of fish and is instead based on the number of tows, and thus, it is important to store the data as frequencies rather than compositions such that information is not lost.
 Alternatives: age frequency, age observation
-Range of possible values: Range of possible values: proportions 0 - 1, non-standardized zero to infinity
-Units: 
+Range of possible values: 0--1
+Units:
 Forecast: projection of model to generate derived quantities after the final data year based on specific assumptions around future biology, selectivity, and recruitment
 Examples: short-term forecast
 Rationale: 
