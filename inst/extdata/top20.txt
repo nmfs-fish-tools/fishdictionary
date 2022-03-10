@@ -110,7 +110,7 @@ Plus group: fish of a designated age and older where the life history of all age
 Examples: 
 Rationale: 
 Alternatives: 
-Range of possible values: age 1 or greater
+Range of possible values: 0--Inf
 Units: whole year age
 Cohort: Individuals of a stock born in the same spawning season.
 Examples: 
