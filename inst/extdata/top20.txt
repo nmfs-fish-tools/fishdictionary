@@ -88,10 +88,10 @@ Rationale: Composition is more commonly used than frequency but storing data as 
 Alternatives: age frequency, age observation
 Range of possible values: 0--1
 Units:
-Forecast: projection of model to generate derived quantities after the final data year based on specific assumptions around future biology, selectivity, and recruitment
+Forecast: A probabilistic statement about future events.
 Examples: short-term forecast
-Rationale: 
-Alternatives: projection
+Rationale: Future weather is a forecast because it does not require an if statement, whereas future spawning biomass is a projection because it depends on an assumption about future catches.
+Alternatives: projection, prediction
 Range of possible values:
 Units: 
 Sex: Sex of a fish.
