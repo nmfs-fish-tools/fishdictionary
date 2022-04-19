@@ -1,0 +1,6 @@
+Forecast: A probabilistic statement about future events.
+Examples: short-term forecast
+Rationale: Future weather is a forecast because it does not require an if statement, whereas future spawning biomass is a projection because it depends on an assumption about future catches.
+Alternatives: projection, prediction
+Range of possible values:
+Units: 
