@@ -4,8 +4,23 @@
 3,Nages,ages,integer,NA,NA,number of ages
 4,Fleet,fleet,integer,NA,NA,fleet value
 5,Year,Year,integer,year,YYYY,year value
-6,Spawnstockbio,Spawning stock biomass,double,ton,NA,spawning stock biomass in weight
-7,Fishingmort,Instantaneous fishing mortality,double,NA,NA,instantaneous annual F
+6,Spawnbio,Spawning biomass,double,ton,NA,spawning biomass in weight
+7,F,Instantaneous annual fishing mortality,double,NA,NA,instantaneous annual exponential rate of removal of fish by fishing
 8,Totbio,Total biomass (males +females),double,ton,NA,Total stock biomass in weight
 9,Totcatch,Total catch (m+f) in weight,double,ton,NA,Total catch (all the dead fish)
 10,season,season,integer,NA,NA,The season
+11,lnr0,natural log of unfished recruitment,double,numbers in thousands,NA,The average number of fish recruited to the population under equilibrium conditions on the natural-log scale.
+12,agecomp,age composition,double,NA,NA,"A matrix of proportions of observed ages per age categories that are typically summarized by time period, data source, and sex."
+13,CPUE,fish caught in one unit of effort,double,NA,NA,The quantity of fish caught (in numbers or weight)
+14,FMSY,fishing mortality at maximum sustainable yield,double,NA,NA,The fishing mortality rate that achieves the maximum sustainable yield
+15,Forecast,a probabilistic statement about future events,NA,NA,NA,a probabilistic statement about future events
+16,Cohort,Individuals of a stock born in the same spawning season.,NA,NA,NA,Individuals of a stock born in the same spawning season.
+17,Z,Instantaneous mortality rate,double,NA,NA,the sum of F and M
+18,lengthcomp,length composition of the stock,double,NA,NA,"A matrix of proportions of observed lengths per length categories that are typically summarized by time period, data source, and sex."
+19,MSY,maximum sustainable yield,double,tons,NA,"A maximum level of yield that can be continuously taken from an exploited stock under average environmental conditions. It can be defined given biological parameters (e.g., natural mortality and stock productivity) or using proxies (e.g., the maximum yield at 40% of unfished biomass)."
+20,plusgroup,fish of a designated age and older,double,age,NA,fish of a designated age and older where the life history of all ages in the group are treated similarly because the ability to predict age from length is difficult given the lack of increase in length or there is limited data to define differences.
+21,recruits,Number of fish transitioning to the fished group,double,numbers,NA,Number of fish transitioning to the fished group
+22,sex,"The biological properties of an organism that help to distinguish it as a male, female, or hermaphrodite.",NA,NA,NA,"The biological properties of an organism that help to distinguish it as a male, female, or hermaphrodite."
+23,SPR,Spawners per recruit,double,NA,NA,The ratio of the amount of spawning biomass produced by a cohort over its lifespan under a specific fishing regime relative to the spawning biomass produced over the cohort's lifespan under no fishing.
+24,unfished,"Levels of the stock, parameters, or derived quantities prior to the advent of industrialized fishing",NA,NA,NA,"Levels of the stock, parameters, or derived quantities prior to the advent of industrialized fishing"
+25,weight,The individual body weight of a fish that may come from direct measurements or an average across a sample.,double,kg,NA,The individual body weight of a fish that may come from direct measurements or an average across a sample.
