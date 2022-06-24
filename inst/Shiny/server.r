@@ -7,7 +7,7 @@ server <- function(input, output, session) {
   onSessionEnded(function(){ unlink(tmp) })
 
   RdDatabase <- reactive({
-    Rd_db("stockassessmentdictionary")
+    tools::Rd_db(package = "stockassessmentdictionary")
   })
 
   output$choose_topic <- renderUI({

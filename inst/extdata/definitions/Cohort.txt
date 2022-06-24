@@ -1,6 +1,0 @@
-Cohort: Individuals of a stock born in the same spawning season.
-Examples: 
-Rationale: 
-Alternatives: recruit
-Range of possible values:
-Units: 

@@ -2,3 +2,4 @@
 
 export(add_object)
 export(read_in)
+export(shiny_dd)
