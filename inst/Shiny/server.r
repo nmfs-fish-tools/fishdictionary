@@ -3,6 +3,7 @@ server <- function(input, output, session) {
   require(jsonlite)
   library(stockassessmentdictionary)
   require(ggplot2)
+  require(gbRd)
  tmp <- tempfile()
   onSessionEnded(function(){ unlink(tmp) })
 
