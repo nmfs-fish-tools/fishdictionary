@@ -3,14 +3,22 @@ server <- function(input, output, session) {
   require(jsonlite)
   library(stockassessmentdictionary)
   require(ggplot2)
-output$choose_topic <- renderUI({
-    choices <- list.files(system.file("html", package = "stockassessmentdictionary"))
-    selectInput("topic", "select topic", choices)
+ tmp <- tempfile()
+  onSessionEnded(function(){ unlink(tmp) })
+
+  RdDatabase <- reactive({
+    Rd_db("stockassessmentdictionary")
+  })
+
+  output$choose_topic <- renderUI({
+    selectInput("topic", "select topic", sub(".Rd", "", names(RdDatabase())))
   })
 
   output$documentation <- renderUI({
-    includeHTML(
-      system.file(paste0("html/", req(input$topic)), package = "stockassessmentdictionary")
-    )
+    rdfile <- paste0(input$topic, ".Rd")
+    req(rdfile %in% names(RdDatabase()))
+    Rd2HTML(RdDatabase()[[rdfile]], tmp, no_links = TRUE, 
+    package = "stockassessmentdictionary")
+    includeHTML(tmp)
   })
 }
