@@ -4,7 +4,7 @@
 #' rates or the fraction of the population that dies in a very short, i.e., 
 #' instantaneous, period of time. Instantaneous rates are sometimes more easily
 #'  interpreted as an annual rate, which can be done using the following formula:
-#' \code{A = 1 - e^{-x}}.}
+#' \code{A = 1 - e^{-x}}.
 #' 
 #' @format A schema with the following fields:
 #' \describe{Examples}{An instantaneous mortality rate of 0.0 means that all

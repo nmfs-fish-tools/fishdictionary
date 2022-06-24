@@ -3,6 +3,8 @@
 #' A matrix of proportions of observed lengths per length categories that are 
 #' typically summarized by time period, data source, and sex.
 #' 
+#' @format A schema with the following fields:
+#' \describe{
 #' \item{Examples}{}
 #' \item{Rationale}{Composition is more commonly used than frequency but storing
 #'  data as compositions removes information about the number of fish that were 
