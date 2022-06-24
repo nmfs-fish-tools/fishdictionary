@@ -4,6 +4,7 @@ server <- function(input, output, session) {
   library(stockassessmentdictionary)
   require(ggplot2)
   require(gbRd)
+
  tmp <- tempfile()
   onSessionEnded(function(){ unlink(tmp) })
 
@@ -18,7 +19,7 @@ server <- function(input, output, session) {
   output$documentation <- renderUI({
     rdfile <- paste0(input$topic, ".Rd")
     req(rdfile %in% names(RdDatabase()))
-    Rd2HTML(RdDatabase()[[rdfile]], tmp, no_links = TRUE, 
+    tools::Rd2HTML(RdDatabase()[[rdfile]], tmp, no_links = TRUE, 
     package = "stockassessmentdictionary")
     includeHTML(tmp)
   })
