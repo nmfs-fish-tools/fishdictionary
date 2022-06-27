@@ -21,7 +21,7 @@ lost.}
 }
 }
 \source{
-See
+see
 }
 \usage{
 AgeComposition
