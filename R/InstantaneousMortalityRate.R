@@ -7,13 +7,14 @@
 #' \code{A = 1 - e^{-x}}.
 #' 
 #' @format A schema with the following fields:
-#' \describe{Examples}{An instantaneous mortality rate of 0.0 means that all
+#' \describe{
+#' \item{Examples}{An instantaneous mortality rate of 0.0 means that all
 #'  individual survive and the resulting annual survival rate is 100%.}
-#' \describe{Rationale}{Standardizing notation for instantaneous rates of 
+#' \item{Rationale}{Standardizing notation for instantaneous rates of 
 #' mortality is easy because Z appears to be one of the most well-adopted 
 #' acronyms across a great number of disciplines.}
-#' \describe{Alternatives}{}
-#' \describe{Range of possible values}{0--Inf}
-#' \describe{Units}{ \code{time^{-1}}}
+#' \item{Alternatives}{}
+#' \item{Range of possible values}{0--Inf}
+#' \item{Units}{ \code{time^{-1}}}
 #' }
 InstaneousMortalityRate <- NULL
