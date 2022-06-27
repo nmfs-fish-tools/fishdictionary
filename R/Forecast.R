@@ -2,7 +2,7 @@
 #' 
 #' A probabilistic statement about future events.
 #' 
-#'  @format A schema with the following fields:
+#' @format
 #' \describe{
 #'\item{Examples}{short-term forecast}
 #'\item{Rationale}{Future weather is a forecast because it does not require 

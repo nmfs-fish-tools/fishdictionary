@@ -3,7 +3,7 @@
 #' A matrix of proportions of observed ages per age categories that are 
 #' typically summarized by time period, data source, and sex.
 #' 
-#' @format A schema with the following fields:
+#' @format 
 #' \describe{
 #' \item{Examples} 
 #' \item{Rationale}{Composition is more commonly used than frequency but 

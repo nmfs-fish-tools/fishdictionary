@@ -6,7 +6,7 @@
 #'  interpreted as an annual rate, which can be done using the following formula:
 #' \code{A = 1 - e^{-x}}.
 #' 
-#' @format A schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{An instantaneous mortality rate of 0.0 means that all
 #'  individual survive and the resulting annual survival rate is 100%.}

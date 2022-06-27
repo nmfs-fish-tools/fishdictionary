@@ -5,7 +5,14 @@
 \alias{SpawnerPerRecruit}
 \title{Spawner per recruit (SPR)}
 \format{
-An object of class \code{NULL} of length 0.
+\describe{
+\item{Examples}{SPR30\% }
+\item{Rationale}{Spawner per recruit and spawning potential ratio have the
+same acronym of SPR.}
+\item{Alternatives}{30\%SPR}
+\item{Range of possible values}{0--1}
+\item{Units}{}
+}
 }
 \usage{
 SpawnerPerRecruit
@@ -19,16 +26,5 @@ Only information about the life history and fishing is needed for the
 calculation, whereas other reference points may need information about
 recruitment, making it a common proxy for reference points based on maximum
 sustainable yield.
-}
-\details{
-@format A schema with the following fields:
-\describe{
-\item{Examples}{SPR30\% }
-\item{Rationale}{Spawner per recruit and spawning potential ratio have the
-same acronym of SPR.}
-\item{Alternatives}{30\%SPR}
-\item{Range of possible values}{0--1}
-\item{Units}{}
-}
 }
 \keyword{datasets}

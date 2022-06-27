@@ -5,7 +5,6 @@
 \alias{Biomass}
 \title{Biomass}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}{spawning biomass, age three-plus biomass, exploitable
 biomass, January 1 biomass}
@@ -26,6 +25,9 @@ abundance, which is in terms of numbers rather than weight.}
 Biomass
 }
 \description{
-Weight of fish within a stock. If referring to a certain portion of the stock, it should be made clear what portion of the stock the biomass pertains to. Model output related to biomass is assumed to be measured at the beginning of the year unless otherwise specified.
+Weight of fish within a stock. If referring to a certain portion of the
+stock, it should be made clear what portion of the stock the biomass
+pertains to. Model output related to biomass is assumed to be measured
+at the beginning of the year unless otherwise specified.
 }
 \keyword{datasets}

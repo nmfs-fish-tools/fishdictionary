@@ -5,13 +5,12 @@
 \alias{MaximumSustainableYield}
 \title{Maximum Sustainable Yield}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}{}
 \item{Rationale}{Many management frameworks are based on calculations
 of MSY despite difficulty in its estimation. Metrics such as fishing rate
 at MSY should be abbreviated using all upper case letters but this is not
-common practice as of yet. For example, sometimes you will see F_msy or
+common practice as of yet. For example, sometimes you will see \code{F_msy} or
 some derivative thereof.}
 \item{Alternatives}{msy, MSYproxy}
 \item{Range of possible values}{0--Inf}

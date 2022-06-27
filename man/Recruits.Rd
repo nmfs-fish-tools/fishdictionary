@@ -5,7 +5,6 @@
 \alias{Recruits}
 \title{Recruits}
 \format{
-An item of type schema with the following fields:
 \describe{
 \item{Examples}{thousands of recruits, stock-recruitment relationship}
 \item{Rationale}{Recruitment can also be used to describe fish reaching a

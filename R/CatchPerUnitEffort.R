@@ -8,7 +8,8 @@
 #' Sometimes referred to as catch rate. CPUE may be used
 #' as a measure of economic efficiency of fishing as well as
 #' an index of fish abundance.
-#' @format A schema with the following fields:
+#' 
+#' @format 
 #' \describe{
 #' \item{Examples}{fishery-independent CPUE}
 #'\item{Rationale}{Many models use the term index for a survey and CPUE for 

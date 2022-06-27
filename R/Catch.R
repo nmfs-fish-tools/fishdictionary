@@ -2,7 +2,7 @@
 #'
 #' Everything that died due to fishing, i.e., both landed and discarded fish.
 #' 
-#'  @format A schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{recreational catch}
 #' \item{Rationale}{Landings and catch are sometimes thought to be 

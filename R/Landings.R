@@ -3,8 +3,8 @@
 #' Catch that was recorded dockside. Typically, this is catch that was brought
 #' to shore, sorted to species, recorded on a fish ticket after being weighed,
 #'  and sold to a processing plant.
-#' 
-#' @format A schema with the following fields:
+#'
+#' @format
 #' \describe{
 #' \item{Examples}{}
 #' \item{Rationale}{Landings and catch are sometimes thought to be 

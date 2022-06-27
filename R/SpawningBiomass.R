@@ -14,7 +14,7 @@
 #' natural mortality rates, onset of sexual maturity, and
 #' environmental conditions.
 #' 
-#' @format A schema with the following fields: 
+#' @format
 #' \item{Examples}{female spawning biomass}
 #' \item{Rationale}{Spawning biomass and spawning stock biomass have 
 #' both been used historically, though the former is shorter without 

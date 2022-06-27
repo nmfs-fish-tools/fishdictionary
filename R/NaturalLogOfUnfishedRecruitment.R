@@ -3,7 +3,7 @@
 #' Also known as lnR0. The average number of fish recruited to the population 
 #' under equilibrium conditions on the natural-log scale.
 #' 
-#' @format An schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{}
 #' \item{Rationale}{The notation for this value is vast, which can be seen 

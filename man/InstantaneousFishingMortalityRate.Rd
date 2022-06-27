@@ -5,24 +5,6 @@
 \alias{InstantaneousFishingMortalityRate}
 \title{Instantaneous fishing mortality rate (F)}
 \format{
-An object of class \code{NULL} of length 0.
-}
-\source{
-see
-}
-\usage{
-InstantaneousFishingMortalityRate
-}
-\description{
-Instantaneous annual exponential rate at which fish are
-being removed from the population due to fishing. Many other platforms
-distinguish between different F. For example, looking at ASAP, we have
-Average F (across a certain age range), Total F (by age), N-weighted,
-B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely
-does) incorporate selectivity. Apical F - at the peak of selectivity curve?
-}
-\details{
-@format A schema with the following fields:
 \describe{
 \item{Examples}{Fun (ICES) is fishing mortality of unwanted catch}
 \item{Rationale}{It is often not clear whether fishing mortality refers to the
@@ -37,5 +19,19 @@ apical F}
 \item{Range of possible values}{0--Inf}
 \item{Units}{\code{time^{-1}}}
 }
+}
+\source{
+see
+}
+\usage{
+InstantaneousFishingMortalityRate
+}
+\description{
+Instantaneous annual exponential rate at which fish are
+being removed from the population due to fishing. Many other platforms
+distinguish between different F. For example, looking at ASAP, we have
+Average F (across a certain age range), Total F (by age), N-weighted,
+B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely
+does) incorporate selectivity. Apical F - at the peak of selectivity curve?
 }
 \keyword{datasets}

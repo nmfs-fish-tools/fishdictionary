@@ -5,7 +5,7 @@
 #' that could experience density-dependent life-history processes to a 
 #' juvenile stage without density-dependent processes.
 #' 
-#' @format An item of type schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{thousands of recruits, stock-recruitment relationship}
 #' \item{Rationale}{Recruitment can also be used to describe fish reaching a 

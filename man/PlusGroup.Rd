@@ -5,7 +5,6 @@
 \alias{PlusGroup}
 \title{Plus group}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}{}
 \item{Rationale}{}

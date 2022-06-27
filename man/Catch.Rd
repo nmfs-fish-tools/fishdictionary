@@ -5,16 +5,6 @@
 \alias{Catch}
 \title{Catch}
 \format{
-An object of class \code{NULL} of length 0.
-}
-\usage{
-Catch
-}
-\description{
-Everything that died due to fishing, i.e., both landed and discarded fish.
-}
-\details{
-@format A schema with the following fields:
 \describe{
 \item{Examples}{recreational catch}
 \item{Rationale}{Landings and catch are sometimes thought to be
@@ -24,5 +14,11 @@ bycatch or unwanted catch.}
 \item{Range of possible values}{0--Inf}
 \item{Units}{mt, numbers}
 }
+}
+\usage{
+Catch
+}
+\description{
+Everything that died due to fishing, i.e., both landed and discarded fish.
 }
 \keyword{datasets}

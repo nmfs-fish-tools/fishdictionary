@@ -5,7 +5,6 @@
 \alias{AgeComposition}
 \title{Age composition}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}
 \item{Rationale}{Composition is more commonly used than frequency but

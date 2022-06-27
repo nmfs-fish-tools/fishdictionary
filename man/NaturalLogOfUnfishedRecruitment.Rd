@@ -5,7 +5,6 @@
 \alias{NaturalLogOfUnfishedRecruitment}
 \title{Natural log of unfished recruitment}
 \format{
-An schema with the following fields:
 \describe{
 \item{Examples}{}
 \item{Rationale}{The notation for this value is vast, which can be seen

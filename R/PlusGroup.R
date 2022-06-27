@@ -5,7 +5,7 @@
 #' from length is difficult given the lack of increase in length or there is 
 #' limited data to define differences.
 #' 
-#' @format A schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{} 
 #' \item{Rationale}{} 

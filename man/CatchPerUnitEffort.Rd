@@ -5,7 +5,6 @@
 \alias{CatchPerUnitEffort}
 \title{Catch Per Unit Effort (CPUE)}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}{fishery-independent CPUE}
 \item{Rationale}{Many models use the term index for a survey and CPUE for

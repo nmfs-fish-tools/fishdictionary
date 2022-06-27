@@ -5,7 +5,6 @@
 \alias{Landings}
 \title{Landings}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}{}
 \item{Rationale}{Landings and catch are sometimes thought to be

@@ -3,6 +3,7 @@
 #' The biological properties of an organism that help to distinguish it as a 
 #' male, female, or hermaphrodite.
 #' 
+#' @format
 #' \describe{
 #' \item{Examples}{}
 #' \item{Rationale}{Fisheries science is concerned about the reproductive 

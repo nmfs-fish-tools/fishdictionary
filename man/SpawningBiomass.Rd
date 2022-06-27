@@ -5,7 +5,6 @@
 \alias{SpawningBiomass}
 \title{Spawning Biomass (SB)}
 \format{
-A schema with the following fields:
 \item{Examples}{female spawning biomass}
 \item{Rationale}{Spawning biomass and spawning stock biomass have
 both been used historically, though the former is shorter without

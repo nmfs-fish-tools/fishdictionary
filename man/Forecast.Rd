@@ -5,16 +5,6 @@
 \alias{Forecast}
 \title{Forecast}
 \format{
-An object of class \code{NULL} of length 0.
-}
-\usage{
-Forecast
-}
-\description{
-A probabilistic statement about future events.
-}
-\details{
-@format A schema with the following fields:
 \describe{
 \item{Examples}{short-term forecast}
 \item{Rationale}{Future weather is a forecast because it does not require
@@ -24,5 +14,11 @@ it depends on an assumption about future catches.}
 \item{Range of possible values}{}
 \item{Units}{}
 }
+}
+\usage{
+Forecast
+}
+\description{
+A probabilistic statement about future events.
 }
 \keyword{datasets}

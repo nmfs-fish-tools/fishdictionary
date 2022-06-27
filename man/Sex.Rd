@@ -5,19 +5,6 @@
 \alias{Sex}
 \title{Sex}
 \format{
-An object of class \code{NULL} of length 0.
-}
-\source{
-Torgrimson and Minson, 2005
-}
-\usage{
-Sex
-}
-\description{
-The biological properties of an organism that help to distinguish it as a
-male, female, or hermaphrodite.
-}
-\details{
 \describe{
 \item{Examples}{}
 \item{Rationale}{Fisheries science is concerned about the reproductive
@@ -29,5 +16,15 @@ realized because of chromosomal composition (Torgrimson and Minson, 2005).}
 Undetermined}
 \item{Units}{}
 }
+}
+\source{
+Torgrimson and Minson, 2005
+}
+\usage{
+Sex
+}
+\description{
+The biological properties of an organism that help to distinguish it as a
+male, female, or hermaphrodite.
 }
 \keyword{datasets}

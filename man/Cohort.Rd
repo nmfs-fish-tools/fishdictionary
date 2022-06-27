@@ -5,7 +5,14 @@
 \alias{Cohort}
 \title{Cohort}
 \format{
-An object of class \code{NULL} of length 0.
+A schema with the following fields:
+\describe{
+\item{Examples}{}
+\item{Rationale}{}
+\item{Alternatives}{recruit}
+\item{Range of possible values}{}
+\item{Units}{}
+}
 }
 \source{
 see
@@ -15,15 +22,5 @@ Cohort
 }
 \description{
 Individuals of a stock born in the same spawning season.
-}
-\details{
-@format A schema with the following fields:
-\describe{
-\item{Examples}{}
-\item{Rationale}{}
-\item{Alternatives}{recruit}
-\item{Range of possible values}{}
-\item{Units}{}
-}
 }
 \keyword{datasets}

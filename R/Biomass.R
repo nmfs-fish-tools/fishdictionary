@@ -1,8 +1,11 @@
 #' Biomass
 #' 
-#' Weight of fish within a stock. If referring to a certain portion of the stock, it should be made clear what portion of the stock the biomass pertains to. Model output related to biomass is assumed to be measured at the beginning of the year unless otherwise specified.
+#' Weight of fish within a stock. If referring to a certain portion of the 
+#' stock, it should be made clear what portion of the stock the biomass 
+#' pertains to. Model output related to biomass is assumed to be measured 
+#' at the beginning of the year unless otherwise specified.
 #' 
-#' @format A schema with the following fields:
+#' @format 
 #' \describe{
 #' \item{Examples}{spawning biomass, age three-plus biomass, exploitable 
 #' biomass, January 1 biomass}

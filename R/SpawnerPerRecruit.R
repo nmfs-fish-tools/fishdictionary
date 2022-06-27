@@ -9,7 +9,7 @@
 #' recruitment, making it a common proxy for reference points based on maximum 
 #' sustainable yield.
 #' 
-#'  @format A schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{SPR30% }
 #' \item{Rationale}{Spawner per recruit and spawning potential ratio have the 

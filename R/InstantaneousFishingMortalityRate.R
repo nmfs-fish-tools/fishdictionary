@@ -7,7 +7,7 @@
 #' B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely
 #'  does) incorporate selectivity. Apical F - at the peak of selectivity curve?
 #' 
-#'  @format A schema with the following fields:
+#' @format
 #' \describe{
 #' \item{Examples}{Fun (ICES) is fishing mortality of unwanted catch}
 #'\item{Rationale}{It is often not clear whether fishing mortality refers to the 
