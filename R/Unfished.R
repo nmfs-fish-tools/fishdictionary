@@ -9,3 +9,4 @@
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{}
 #' }
+Unfished <- NULL

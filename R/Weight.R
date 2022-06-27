@@ -17,3 +17,4 @@
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{kg}
 #' }
+Weight <- NULL

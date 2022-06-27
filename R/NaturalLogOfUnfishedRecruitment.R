@@ -17,3 +17,4 @@
 #' \item{Units}{ln(numbers x 1000)}
 #' }
 #' @source cite here
+NaturalLogOfUnfishedRecruitment <- NULL

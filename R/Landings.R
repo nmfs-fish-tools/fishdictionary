@@ -8,7 +8,7 @@
 #' \describe{
 #' \item{Examples}{}
 #' \item{Rationale}{Landings and catch are sometimes thought to be 
-#' interchangeable }
+#' interchangeable
 #' but they are not given that catch can also include bycatch or 
 #' unwanted catch.}
 #' \item{Alternatives}{retained catch, wanted catch}

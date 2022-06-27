@@ -19,3 +19,4 @@
 #' \item{Units}{mt, numbers}
 #' }
 #' @source insert URL
+MaximumSustainableYield <- NULL

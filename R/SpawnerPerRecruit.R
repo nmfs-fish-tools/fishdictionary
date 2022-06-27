@@ -18,3 +18,4 @@
 #' \item{Range of possible values}{0--1}
 #' \item{Units}{}
 #' }
+SpawnerPerRecruit <- NULL

@@ -13,3 +13,4 @@
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{whole year age}
 #' }
+PlusGroup <- NULL

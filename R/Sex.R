@@ -15,3 +15,4 @@
 #' \item{Units}{}
 #' }
 #' @source Torgrimson and Minson, 2005
+Sex <- NULL

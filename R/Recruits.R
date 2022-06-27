@@ -18,3 +18,4 @@
 #' \item{Units}{numbers}
 #' }
 #' @source Lorenzen and Camp, 2019
+Recruits <- NULL
