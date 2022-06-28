@@ -3,6 +3,7 @@ server <- function(input, output, session) {
   require(jsonlite)
   library(stockassessmentdictionary)
   require(ggplot2)
+  require(shiny)
 
  tmp <- tempfile()
   onSessionEnded(function(){ unlink(tmp) })
@@ -12,7 +13,8 @@ server <- function(input, output, session) {
   })
 
   output$choose_topic <- renderUI({
-    selectInput("Term", "Select term or function", sub(".Rd", "", names(RdDatabase())))
+    selectInput("Term", "Select term or function", 
+    sub(".Rd", "", names(RdDatabase())))
   })
 
   output$documentation <- renderUI({
