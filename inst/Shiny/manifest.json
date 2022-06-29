@@ -12,7 +12,7 @@
   "packages": {
     "MASS": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -47,7 +47,7 @@
     },
     "Matrix": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -89,7 +89,7 @@
     },
     "R6": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -117,7 +117,7 @@
     },
     "RColorBrewer": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -142,7 +142,7 @@
     },
     "Rcpp": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -173,7 +173,7 @@
     },
     "base64enc": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -200,7 +200,7 @@
     },
     "bslib": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -233,7 +233,7 @@
     },
     "cachem": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -264,7 +264,7 @@
     },
     "cli": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -298,7 +298,7 @@
     },
     "colorspace": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -332,7 +332,7 @@
     },
     "commonmark": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -364,7 +364,7 @@
     },
     "crayon": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -394,7 +394,7 @@
     },
     "digest": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -425,7 +425,7 @@
     },
     "ellipsis": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -457,7 +457,7 @@
     },
     "fansi": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -491,7 +491,7 @@
     },
     "farver": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -523,7 +523,7 @@
     },
     "fastmap": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -554,7 +554,7 @@
     },
     "fontawesome": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -586,7 +586,7 @@
     },
     "fs": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -623,7 +623,7 @@
     },
     "ggplot2": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -658,7 +658,7 @@
     },
     "glue": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -694,7 +694,7 @@
     },
     "gtable": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -726,7 +726,7 @@
     },
     "htmltools": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -761,7 +761,7 @@
     },
     "httpuv": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -797,7 +797,7 @@
     },
     "isoband": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -831,7 +831,7 @@
     },
     "jquerylib": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -859,7 +859,7 @@
     },
     "jsonlite": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -891,7 +891,7 @@
     },
     "labeling": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -917,7 +917,7 @@
     },
     "later": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -952,7 +952,7 @@
     },
     "lattice": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -987,7 +987,7 @@
     },
     "lifecycle": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1019,7 +1019,7 @@
     },
     "magrittr": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1054,7 +1054,7 @@
     },
     "mgcv": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1084,7 +1084,7 @@
     },
     "mime": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1115,7 +1115,7 @@
     },
     "munsell": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1142,7 +1142,7 @@
     },
     "nlme": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1178,7 +1178,7 @@
     },
     "pillar": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1214,7 +1214,7 @@
     },
     "pkgconfig": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1242,7 +1242,7 @@
     },
     "promises": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1278,7 +1278,7 @@
     },
     "rappdirs": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1312,7 +1312,7 @@
     },
     "rlang": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1350,7 +1350,7 @@
     },
     "sass": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1385,7 +1385,7 @@
     },
     "scales": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1418,7 +1418,7 @@
     },
     "shiny": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1452,7 +1452,7 @@
     },
     "sourcetools": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1487,7 +1487,7 @@
       "GithubRepo": "data_dictionary",
       "GithubUsername": "nmfs-fish-tools",
       "GithubRef": "shiny_app",
-      "GithubSha1": "fa455673c8a312b1f72fdf7e4410c3dfea82ab9f",
+      "GithubSha1": "b6750bb513b4176650d788ab56966a8c6349120f",
       "description": {
         "Package": "stockassessmentdictionary",
         "Type": "package",
@@ -1504,21 +1504,21 @@
         "RemoteRepo": "data_dictionary",
         "RemoteUsername": "nmfs-fish-tools",
         "RemoteRef": "shiny_app",
-        "RemoteSha": "fa455673c8a312b1f72fdf7e4410c3dfea82ab9f",
+        "RemoteSha": "b6750bb513b4176650d788ab56966a8c6349120f",
         "GithubRepo": "data_dictionary",
         "GithubUsername": "nmfs-fish-tools",
         "GithubRef": "shiny_app",
-        "GithubSHA1": "fa455673c8a312b1f72fdf7e4410c3dfea82ab9f",
+        "GithubSHA1": "b6750bb513b4176650d788ab56966a8c6349120f",
         "NeedsCompilation": "no",
-        "Packaged": "2022-06-28 05:55:59 UTC; chris",
+        "Packaged": "2022-06-29 23:39:32 UTC; chris",
         "Author": "First Last [aut, cre] (YOUR-ORCID-ID)",
         "Maintainer": "First Last <first.last@example.com>",
-        "Built": "R 4.2.0; ; 2022-06-28 05:56:01 UTC; windows"
+        "Built": "R 4.2.0; ; 2022-06-29 23:39:34 UTC; windows"
       }
     },
     "tibble": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1557,7 +1557,7 @@
     },
     "utf8": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1589,7 +1589,7 @@
     },
     "vctrs": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1626,7 +1626,7 @@
     },
     "viridisLite": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1656,7 +1656,7 @@
     },
     "withr": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1690,7 +1690,7 @@
     },
     "xtable": {
       "Source": "CRAN",
-      "Repository": "https://mirrors.nics.utk.edu/cran",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1720,7 +1720,7 @@
   },
   "files": {
     "server.r": {
-      "checksum": "95d575c9a51c72c180877c8bfa80c2e4"
+      "checksum": "2742a4ee253d3be52accffc2566754ef"
     },
     "ui.r": {
       "checksum": "5ff3d80a265463bdd09d0592efb4d136"
