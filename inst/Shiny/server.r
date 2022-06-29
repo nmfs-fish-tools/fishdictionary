@@ -22,6 +22,6 @@ server <- function(input, output, session) {
     req(rdfile %in% names(RdDatabase()))
     tools::Rd2HTML(RdDatabase()[[rdfile]], tmp, no_links = TRUE, 
     package = "stockassessmentdictionary")
-    includeHTML(tmp)
+    htmltools::includeHTML(tmp)
   })
 }
