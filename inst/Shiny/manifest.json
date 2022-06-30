@@ -1487,7 +1487,7 @@
       "GithubRepo": "data_dictionary",
       "GithubUsername": "nmfs-fish-tools",
       "GithubRef": "shiny_app",
-      "GithubSha1": "b6750bb513b4176650d788ab56966a8c6349120f",
+      "GithubSha1": "3b175885d0a381c70dadf8e3eb0c17ca31442912",
       "description": {
         "Package": "stockassessmentdictionary",
         "Type": "package",
@@ -1504,16 +1504,16 @@
         "RemoteRepo": "data_dictionary",
         "RemoteUsername": "nmfs-fish-tools",
         "RemoteRef": "shiny_app",
-        "RemoteSha": "b6750bb513b4176650d788ab56966a8c6349120f",
+        "RemoteSha": "3b175885d0a381c70dadf8e3eb0c17ca31442912",
         "GithubRepo": "data_dictionary",
         "GithubUsername": "nmfs-fish-tools",
         "GithubRef": "shiny_app",
-        "GithubSHA1": "b6750bb513b4176650d788ab56966a8c6349120f",
+        "GithubSHA1": "3b175885d0a381c70dadf8e3eb0c17ca31442912",
         "NeedsCompilation": "no",
-        "Packaged": "2022-06-29 23:39:32 UTC; chris",
+        "Packaged": "2022-06-30 00:14:14 UTC; chris",
         "Author": "First Last [aut, cre] (YOUR-ORCID-ID)",
         "Maintainer": "First Last <first.last@example.com>",
-        "Built": "R 4.2.0; ; 2022-06-29 23:39:34 UTC; windows"
+        "Built": "R 4.2.0; ; 2022-06-30 00:14:15 UTC; windows"
       }
     },
     "tibble": {
@@ -1720,7 +1720,7 @@
   },
   "files": {
     "server.r": {
-      "checksum": "2742a4ee253d3be52accffc2566754ef"
+      "checksum": "f1982d8b9ac2f19837b6bcbc24583a38"
     },
     "ui.r": {
       "checksum": "5ff3d80a265463bdd09d0592efb4d136"
