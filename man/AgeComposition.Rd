@@ -6,7 +6,7 @@
 \title{Age composition}
 \format{
 \describe{
-\item{Examples}
+\item{Examples}{}
 \item{Rationale}{Composition is more commonly used than frequency but
 storing data as compositions removes information about the number of fish
 that were included in the sample. Typically, the sample size associated

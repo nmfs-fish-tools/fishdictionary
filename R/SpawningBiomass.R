@@ -13,11 +13,11 @@
 #' past exploitation pattern, rate of growth, fishing and
 #' natural mortality rates, onset of sexual maturity, and
 #' environmental conditions.
-#' 
+#'
 #' @format
 #' \item{Examples}{female spawning biomass}
-#' \item{Rationale}{Spawning biomass and spawning stock biomass have 
-#' both been used historically, though the former is shorter without 
+#' \item{Rationale}{Spawning biomass and spawning stock biomass have
+#' both been used historically, though the former is shorter without
 #' sacrificing clarity. For single-sex models, spawning biomass often 
 #' pertains only to females but text should be specific, e.g., female 
 #' spawning biomass. The alternative, spawning output, is only viable 

@@ -8,7 +8,6 @@ A biological reference point for fisheries management
 based on the fishing mortality rate (F) that achieves the maximum
 sustainable yield (MSY).}
 \format{
-A schema with the following fields:
 \describe{
 \item{Examples}{}
 \item{Rationale}{The notation used for reference points of commonly
