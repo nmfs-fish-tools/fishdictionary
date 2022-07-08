@@ -10,6 +10,6 @@
 #' }
 #' }
 shiny_dd <- function(browse=TRUE){
-  shiny::runApp(system.file('Shiny', package='stockassessmentdictionary'), 
-  launch.browser = browse, display.mode =  "showcase")
+  shiny::runApp(system.file('Shiny', package = 'stockassessmentdictionary'),
+  launch.browser = browse)
 }
