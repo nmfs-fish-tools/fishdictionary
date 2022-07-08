@@ -16,7 +16,7 @@ data as frequencies rather than compositions such that information is not
 lost.}
 \item{Alternatives}{age frequency, age observation}
 \item{Range of possible values}{0--1}
-\item{Units}
+\item{Units}{}
 }
 }
 \source{
