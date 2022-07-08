@@ -8,26 +8,26 @@
 #' Sometimes referred to as catch rate. CPUE may be used
 #' as a measure of economic efficiency of fishing as well as
 #' an index of fish abundance.
-#' 
-#' @format 
+#'
+#' @format
 #' \describe{
 #' \item{Examples}{fishery-independent CPUE}
-#'\item{Rationale}{Many models use the term index for a survey and CPUE for 
-#' fishery-dependent data but they are typically entered into an input 
-#' file in the same way and the naming should be standardized to a single 
-#' overarching term. The overarching term would facilitate the inclusion of 
-#' environmental data thought to index at least a portion of the population 
-#' dynamics as well as fishery data. Environmental data does not necessarily 
-#' have a catch or unit of effort associated with it, and thus, the term CPUE 
-#' does not apply. Often CPUE data are thought to be a relative index of 
-#' abundance and would never be considered absolute such as can be the case 
-#' for an acoustic survey that does not kill the population but rather creates 
-#' a metric of its abundance potentially over the entire area in which it is 
-#' thought to inhabit. Where, an absolute index of abundance would be assumed 
+#' \item{Rationale}{Many models use the term index for a survey and CPUE for
+#' fishery-dependent data but they are typically entered into an input
+#' file in the same way and the naming should be standardized to a single
+#' overarching term. The overarching term would facilitate the inclusion of
+#' environmental data thought to index at least a portion of the population
+#' dynamics as well as fishery data. Environmental data does not necessarily
+#' have a catch or unit of effort associated with it, and thus, the term CPUE
+#' does not apply. Often CPUE data are thought to be a relative index of
+#' abundance and would never be considered absolute such as can be the case
+#' for an acoustic survey that does not kill the population but rather creates
+#' a metric of its abundance potentially over the entire area in which it is
+#' thought to inhabit. Where, an absolute index of abundance would be assumed
 #' to have a catchability of one.}
-#'\item{Alternatives}{catch rate, index of abundance, standardized fishery 
+#' \item{Alternatives}{catch rate, index of abundance, standardized fishery
 #' catch time series, catch per effort, fishing success, availability.}
-#'\item{Range of possible values}{0--Inf}
-#'\item{Units}{}
+#' \item{Range of possible values}{0--Inf}
+#' \item{Units}{}
 #' }
 CatchPerUnitEffort <- NULL

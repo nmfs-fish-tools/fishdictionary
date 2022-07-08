@@ -1,5 +1,5 @@
 #' Landings
-#' 
+#'
 #' Catch that was recorded dockside. Typically, this is catch that was brought
 #' to shore, sorted to species, recorded on a fish ticket after being weighed,
 #'  and sold to a processing plant.
@@ -7,9 +7,9 @@
 #' @format
 #' \describe{
 #' \item{Examples}{}
-#' \item{Rationale}{Landings and catch are sometimes thought to be 
+#' \item{Rationale}{Landings and catch are sometimes thought to be
 #' interchangeable
-#' but they are not given that catch can also include bycatch or 
+#' but they are not given that catch can also include bycatch or
 #' unwanted catch.}
 #' \item{Alternatives}{retained catch, wanted catch}
 #' \item{Range of possible values}{0--Inf}
