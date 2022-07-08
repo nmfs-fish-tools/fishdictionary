@@ -12,7 +12,7 @@ capabilities of fish, and thus, sex is more appropriate than gender because
 sex is based on reproductive organs and biological functions that are
 realized because of chromosomal composition (Torgrimson and Minson, 2005).}
 \item{Alternatives}{gender}
-\item{Range of possible values}{\link{01}, \link{FMU}, Female, Male, Transitioning,
+\item{Range of possible values}{01, FMU, Female, Male, Transitioning,
 Undetermined}
 \item{Units}{}
 }
