@@ -14,8 +14,8 @@ Run the data dictionary app
 }
 \examples{
 \dontrun{
-if(require(shiny)){
-   shiny_dd()
+if (require(shiny)) {
+  shiny_dd()
 }
 }
 }
