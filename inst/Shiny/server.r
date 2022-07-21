@@ -24,7 +24,9 @@ server <- function(input, output, session) {
     tools::Rd2HTML(rd_database()[[rdfile]], tmp,
     package = "stockassessmentdictionary")
     htmltools::includeCSS("nmfs-styles.css")
-    htmltools::includeHTML(tmp)
+    htmltools::includeHTML(tmp)})
+
+  output$foodweb <- renderPlot({
     mvbutils::foodweb(where = "package:stockassessmentdictionary",
      prune = input$Term)
   })
