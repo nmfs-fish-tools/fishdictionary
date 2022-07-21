@@ -24,6 +24,7 @@ server <- function(input, output, session) {
     req(rdfile %in% names(rd_database()))
     tools::Rd2HTML(rd_database()[[rdfile]], tmp,
     package = "stockassessmentdictionary")
+    htmltools::includeCSS("nmfs-styles.css")
     htmltools::includeHTML(tmp)
   })
 }
