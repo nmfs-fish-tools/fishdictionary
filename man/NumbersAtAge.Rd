@@ -9,7 +9,7 @@
 \item{Rationale}{}
 \item{Alternatives}{}
 \item{Range of possible values}{0--Inf}
-\item{Units}{whole year age}
+\item{Units}{numbers of fish}
 }
 }
 \usage{
