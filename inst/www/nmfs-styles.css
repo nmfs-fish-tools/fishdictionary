@@ -1,0 +1,104 @@
+/** DEFAULT CONTENT FORMATTING **/
+/** ALL FONT SIZES, INCLUDING MAIN, ARE BASED ON SIZE DEFINED HERE **/
+/** Source: https://www.legislative.noaa.gov/noaa-web/css/contentFormatting.css **/
+#contentArea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    color: #000000;
+}
+.caption { font-size: .9em; font-style: italic; color: #888888; }
+a { font-weight: bold; }
+a:link { color: #0057A5;	}
+a:visited { color: #00a3e3;	}
+a:hover { color: #ffbf00; }
+h1 { 
+    font-size: 2.3em;
+    font-weight: bold;
+    letter-spacing: -.05em;
+     color: #0057A5; 
+    margin: 6px 0px 0px 0px;
+    line-height: .9em;
+}
+h2 { 
+    font-weight: normal;
+    font-size: 1.6em;
+    letter-spacing: -.01em;
+    color: #00a3e3;
+    margin: 10px 0px 0px 0px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #0057A5;
+    margin: 2px 0px 4px 0px;
+}
+h4 {
+    font-weight:bold;
+    font-size: 1em;
+    color: #0057A5;
+    margin: 2px 0px 4px 0px
+}
+p {
+margin-top: 0px;
+line-height: 1.4em;
+margin-bottom: .9em;
+text-align: left;
+}
+ul.formattedList  {
+    list-style-type: none;
+    margin-top: -5px;
+    margin-left: 0px;  
+    padding-left: 0px;
+    width: auto;
+}
+ul.formattedList  li {
+    list-style-type: none;
+    background:  url('/images/feature_stories_bullet.png') no-repeat top left;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #FFFFFF;
+    color: #000000; 
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: 3px 4px 3px 18px; 
+    margin-left: 0px;
+}
+ul.formattedList li.heading { 
+    display: block;
+    border-bottom: 1px dotted #cccccc;
+    font-weight: normal;
+    font-size: 1.6em;
+    letter-spacing: -.01em;
+    color: #00a3e3;
+    line-height: 1em;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-left: 0px;
+    background-image: none;
+} 
+ul.formattedList.indent {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.leftAlignImage img, .rightAlignImage img { 
+width: 200px; 
+border: none;
+}
+.leftAlignImage, .rightAlignImage {
+padding: 4px;
+border: 1px solid #CCCCCC; 
+width: 200px;
+height: auto;
+color: #666666;
+font-size: .9em;
+}
+.leftAlignImage { 
+float: left;
+margin-right: 10px;
+}
+.rightAlignImage {
+float: right;
+margin-left: 10px;
+}
+.rightAlignImage p:first-child, .leftAlignImage p:first-child  { margin-left: 0px;  margin-top: 0px; }
+.rightAlignImage p, .leftAlignImage p { margin-bottom:0px; margin-top: 6px; color: #888888;}
