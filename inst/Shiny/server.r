@@ -20,11 +20,12 @@ server <- function(input, output, session) {
 
   output$documentation <- renderUI({
     rdfile <- paste0(input$Term, ".Rd")
-    print(rdfile)
     req(rdfile %in% names(rd_database()))
     tools::Rd2HTML(rd_database()[[rdfile]], tmp,
     package = "stockassessmentdictionary")
     htmltools::includeCSS("nmfs-styles.css")
     htmltools::includeHTML(tmp)
+    mvbutils::foodweb(where = "package:stockassessmentdictionary",
+     prune = input$Term)
   })
 }

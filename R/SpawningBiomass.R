@@ -29,4 +29,8 @@
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{mt}
 #' }
-SpawningBiomass <- NULL
+SpawningBiomass <- function(){
+    w <- Weight()
+    naa <- NumbersAtAge()
+    return(w*naa)
+}
