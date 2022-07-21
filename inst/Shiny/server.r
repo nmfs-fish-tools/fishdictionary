@@ -28,7 +28,6 @@ server <- function(input, output, session) {
 
   output$foodweb <- renderPlot({
     plotout <- mvbutils::foodweb(where = "package:stockassessmentdictionary",
-     prune = input$Term, plotting = FALSE)
-    plot(plotout)
+     prune = input$Term)
   })
 }
