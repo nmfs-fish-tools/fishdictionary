@@ -29,6 +29,7 @@
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{mt}
 #' }
+#' @export
 SpawningBiomass <- function(){
     w <- Weight()
     naa <- NumbersAtAge()

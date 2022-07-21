@@ -17,6 +17,7 @@
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{kg}
 #' }
+#' @export
 Weight <- function(){
     return(0)
 }
