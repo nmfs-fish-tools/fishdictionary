@@ -1141,6 +1141,32 @@
         "Built": "R 4.2.0; ; 2022-05-29 01:31:07 UTC; windows"
       }
     },
+    "mvbutils": {
+      "Source": "CRAN",
+      "Repository": "https://ftp.osuosl.org/pub/cran",
+      "GithubRepo": null,
+      "GithubUsername": null,
+      "GithubRef": null,
+      "GithubSha1": null,
+      "description": {
+        "Package": "mvbutils",
+        "Version": "2.8.232",
+        "Author": "Mark V. Bravington <mark.bravington@csiro.au>",
+        "Maintainer": "Mark V. Bravington <mark.bravington@csiro.au>",
+        "Depends": "R (>= 3.3)",
+        "Imports": "utils, tools, stats, graphics",
+        "Date": "2018-12-11",
+        "Title": "Workspace Organization, Code and Documentation Editing, Package\nPrep and Editing, Etc",
+        "NeedsCompilation": "no",
+        "ByteCompile": "no",
+        "Description": "Hierarchical workspace tree, code editing and backup, easy package prep, editing of packages while loaded, per-object lazy-loading, easy documentation, macro functions, and miscellaneous utilities. Needed by debug package.",
+        "License": "GPL (>= 2)",
+        "Packaged": "2018-12-12 11:36:05 UTC; bra381",
+        "Repository": "CRAN",
+        "Date/Publication": "2018-12-12 15:30:03 UTC",
+        "Built": "R 4.2.0; ; 2022-04-24 01:26:52 UTC; windows"
+      }
+    },
     "nlme": {
       "Source": "CRAN",
       "Repository": "https://ftp.osuosl.org/pub/cran",
@@ -1488,7 +1514,7 @@
       "GithubRepo": "data_dictionary",
       "GithubUsername": "nmfs-fish-tools",
       "GithubRef": "shiny_app",
-      "GithubSha1": "c7666ae13af5770eb7790156d1c276aa71e40f60",
+      "GithubSha1": "483c5fc6a3ad946392045804fdc5783a415af3fa",
       "description": {
         "Package": "stockassessmentdictionary",
         "Title": "What the Package Does (One Line, Title Case)",
@@ -1499,21 +1525,22 @@
         "Encoding": "UTF-8",
         "Roxygen": "list(markdown = TRUE)",
         "RoxygenNote": "7.2.0.9000",
+        "Imports": "mvbutils",
         "RemoteType": "github",
         "RemoteHost": "api.github.com",
         "RemoteRepo": "data_dictionary",
         "RemoteUsername": "nmfs-fish-tools",
         "RemoteRef": "shiny_app",
-        "RemoteSha": "c7666ae13af5770eb7790156d1c276aa71e40f60",
+        "RemoteSha": "483c5fc6a3ad946392045804fdc5783a415af3fa",
         "GithubRepo": "data_dictionary",
         "GithubUsername": "nmfs-fish-tools",
         "GithubRef": "shiny_app",
-        "GithubSHA1": "c7666ae13af5770eb7790156d1c276aa71e40f60",
+        "GithubSHA1": "483c5fc6a3ad946392045804fdc5783a415af3fa",
         "NeedsCompilation": "no",
-        "Packaged": "2022-07-21 18:11:06 UTC; chris",
+        "Packaged": "2022-07-21 19:03:09 UTC; chris",
         "Author": "First Last [aut, cre] (YOUR-ORCID-ID)",
         "Maintainer": "First Last <first.last@example.com>",
-        "Built": "R 4.2.0; ; 2022-07-21 18:11:07 UTC; windows"
+        "Built": "R 4.2.0; ; 2022-07-21 19:03:10 UTC; windows"
       }
     },
     "tibble": {
@@ -1723,10 +1750,10 @@
       "checksum": "383b12076ec170bebc6e91c557a3fcf3"
     },
     "server.r": {
-      "checksum": "1cb895797b3f05a941684055d730e8d4"
+      "checksum": "6cf2e90d5149b874e0d940760f08c1ba"
     },
     "ui.r": {
-      "checksum": "5f34fc56336523438ea03a54df840f4d"
+      "checksum": "dfe919fd7bd04add1f283a644f156a5b"
     }
   },
   "users": null
