@@ -58,13 +58,13 @@ landings <- data.frame(
   group = "landings"
 )
 
-forecast <- data.frame(
+projection <- data.frame(
   keyword = c(
-    "forecast",
     "projection",
+    "forecast",
     "prediction"
   ),
-  group = "forecast"
+  group = "projection"
 )
 
 sex <- data.frame(
@@ -103,7 +103,7 @@ lnr0 <- data.frame(
 )
 
 keyword_map <- rbind(z, spawning_biomass, cpue, catch, landings,
-                 forecast, sex, spr, weight, lnr0)
+                 projection, sex, spr, weight, lnr0)
 keyword_map$keyword_id <- as.factor(1:nrow(keyword_map))
 keyword <- keyword_map$keyword
 

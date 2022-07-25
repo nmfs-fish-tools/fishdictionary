@@ -86,17 +86,11 @@ keyword <- c(
   "weight|kg|mass",
   "length composition|length frequency|length observation",
   "age composition|age frequency|age observation",
-  "forecast|projection|prediction",
+  "projection|forecast|prediction",
   "sex|gender",
   "natural log of unfished recruitment|logr0|lnr0|r0|log(r0)",
   "plus group",
   "cohort|recruit"
-  # "metier|fleet",
-  # "fraction unfished|depletion|relative spawning biomass",
-  # "fork length|FL",
-  # "stock|population",
-  # "fishery",
-  # "fishing"
 )
 
 # Create keywords database ----------------------------------------------------------------
@@ -227,17 +221,11 @@ xlabels <- c(
   "weight",
   "length composition",
   "age composition",
-  "forecast",
+  "projection",
   "sex",
   "natural log of unfished recruitment",
   "plus group",
   "cohort"
-  # "metier",
-  # "fraction unfished",
-  # "fork length",
-  # "stock",
-  # "fishery",
-  # "fishing"
 )
 
 # barplot
