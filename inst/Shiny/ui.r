@@ -2,7 +2,7 @@ require(shiny)
 require(stockassessmentdictionary)
 ui <- fluidPage(
   #theme = "nmfs-styles.css",
-  includeCSS("../../extra.css"),
+  includeCSS("extra.css"),
   # includeCSS("../../www/extra.css"),
   # tags$head(
   #   tags$style(HTML("
