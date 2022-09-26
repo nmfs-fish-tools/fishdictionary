@@ -1,0 +1,93 @@
+---
+title:  "A dictionary for fisheries"
+subtitle: "Using a state-space growth model"
+author: "Chantel Wetzel, Christine Stawitz, Bai Li, Kelli Johnson, Giselle Schmitz <br>1 NOAA Fisheries,NWFSC, Seattle, WA <br>2 NOAA Fisheries, OST, Seattle, WA<br> 3 ECS in support of NOAA Fisheries <br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "slides-style.css", "tufte.css"]
+    lib_dir: libs
+    nature:
+      ratio: '4:3'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc( (%current% - 1) / (%total% - 1) * 100%);">
+          </div>
+        </div>`
+---
+layout: true
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+require(here)
+require(dplyr)
+require(tidyr)
+require(ggplot2)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+# this gives you a tile navigation if you type "O" at any time
+xaringanExtra::use_tile_view()
+```
+
+---
+# ICES/PICES Working Group on Growth Change 
+
+* Co-chairs: Paul Spencer, C. Tara Marshall, Alan Baudron, John Morongiello, Shin-Ichi Ito
+* California Current groundfish species modeled using multiple frameworks
+* von Bertalanffy fit to each cohort (Alan Baudron et al 2014)
+* von Bertalanffy state-space model (Tim Miller et al 2018)
+* State-space autoregressive length-at-age model (Stawitz et al 2014)
+* Other collaborators: Melissa Haltuch (NMFS), Sean Anderson (DFO)
+
+---
+# The California Current
+```{r calcur, echo = FALSE, out.height="500px",  fig.align='center'}
+knitr::include_graphics("./static/pictures/ecosystems.jpg")
+```
+
+
+---
+# State-space autoregressive length-at-age model (sarla)
+* Based on Stawitz et al. 2014 model
+* Adapted for the Stan software by Sean Anderson and Christine Stawitz
+* Added ability to estimate different variation processes simultaneously
+
+---
+# Preliminary Results - Sablefish
+
+```{r show_all, echo=FALSE, out.height="500px",  fig.align='center'}
+knitr::include_graphics("./static/pictures/all-effects.png")
+```
+
+
+
+---
+# Preliminary Results - Sablefish 
+
+```{r show_cohort, echo=FALSE}
+knitr::include_graphics("./static/pictures/cohort-effects.png")
+```
+
+
+---
+# Takeaways 
+* Variation can be aliased by different processes
+* No obvious synchrony or reaction to warming in these results
+
+# Next steps
+* Examining convergence in all effects models
+* Adapting model selection criteria for time series
+* Incorporating temperature time series applied by other WG members
+
+---
+# References
+* Baudron et al. 2013. Warming temperatures and smaller body sizes: synchronous changes in growth of North Sea Fishes. Global Change Biology. https://doi.org/10.1111/gcb.12514 
+* Miller, T.J. et al 2018. Temporal and environmental variation in growth and maturity and effects on management reference points of Georges Bank Atlantic cod. CJFAS. https://doi.org/10.1139/cjfas-2017-0124
+* Stawitz et al 2014. A state-space approach for detecting growth variation and application to North Pacific groundfish. CJFAS. https://doi.org/10.1139/cjfas-2014-0558 
+* Denechaud et al. 2020. A century of fish growth in relation to climate change, population dynamics and exploitation. Global Change Biology. https://doi.org/10.1111/gcb.15298
