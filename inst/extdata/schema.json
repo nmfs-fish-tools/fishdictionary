@@ -18,15 +18,11 @@
             "description": "Detailed information illustrating something that is characteristic of its kind or a general rule of thumb such that readers can grasp the concept of the term",
             "type": "string"
         },
-        "ICES code type": {
-            "description": "ICES code type from https://vocab.ices.dk/",
-            "type": "string"
-        },
         "Units": {
             "description": "Unit of the term",
             "type": "string"
         },
-        "Raionale": {
+        "Rationale": {
             "description": "Reasons for why the term was included",
             "type": "string"
         },

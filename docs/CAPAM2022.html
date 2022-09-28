@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Estimation of changes in growth</title>
+    <title>A dictionary for fisheries</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Christine Stawitz NOAA Fisheries, OST Seattle, WA 2022-09-26" />
+    <meta name="author" content="Chantel Wetzel, Christine Stawitz, Bai Li, Kelli Johnson, Giselle Schmitz  1 NOAA Fisheries,NWFSC, Seattle, WA  2 NOAA Fisheries, OST, Seattle, WA  3 ECS in support of NOAA Fisheries   2022-09-27" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
@@ -16,13 +16,13 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Estimation of changes in growth
+# A dictionary for fisheries
 ]
 .subtitle[
 ## Using a state-space growth model
 ]
 .author[
-### Christine Stawitz<br>NOAA Fisheries, OST<br>Seattle, WA<br>2022-09-26
+### Chantel Wetzel, Christine Stawitz, Bai Li, Kelli Johnson, Giselle Schmitz <br>1 NOAA Fisheries,NWFSC, Seattle, WA <br>2 NOAA Fisheries, OST, Seattle, WA<br> 3 ECS in support of NOAA Fisheries <br> 2022-09-27
 ]
 
 ---
@@ -35,57 +35,83 @@ layout: true
 
 
 
+---
+# Shift to bring data science tools and workflows into science
+
+These tools promise better science in less time
+
+Facilitate remote collaboration
+
+Reproducibility and fixing the retirement problem
 
 ---
-# ICES/PICES Working Group on Growth Change 
+# However, these tools have limited promise without standardization
 
-* Co-chairs: Paul Spencer, C. Tara Marshall, Alan Baudron, John Morongiello, Shin-Ichi Ito
-* California Current groundfish species modeled using multiple frameworks
-* von Bertalanffy fit to each cohort (Alan Baudron et al 2014)
-* von Bertalanffy state-space model (Tim Miller et al 2018)
-* State-space autoregressive length-at-age model (Stawitz et al 2014)
-* Other collaborators: Melissa Haltuch (NMFS), Sean Anderson (DFO)
+Difficult to transfer tools to new locations/species/computer architectures
 
----
-# The California Current
-&lt;img src="./static/pictures/ecosystems.jpg" height="500px" style="display: block; margin: auto;" /&gt;
-
-
----
-# State-space autoregressive length-at-age model (sarla)
-* Based on Stawitz et al. 2014 model
-* Adapted for the Stan software by Sean Anderson and Christine Stawitz
-* Added ability to estimate different variation processes simultaneously
-
----
-# Preliminary Results - Sablefish
-
-&lt;img src="./static/pictures/all-effects.png" height="500px" style="display: block; margin: auto;" /&gt;
-
+Manual steps in data-pre-processing cannot be performed by computers
 
 
 ---
-# Preliminary Results - Sablefish 
+# Protocols and schema 
+.pull-left[
+&lt;img src="./static/pictures/http.png" height="200px" /&gt;
+]
+.pull-right[
+&lt;img src="./static/pictures/schema.png" height="200px" /&gt;
+]
 
-![](./static/pictures/cohort-effects.png)&lt;!-- --&gt;
+If you are sending data over the web, you're using a protocol. Any big data scheme that is used in data science workflows typically adheres to a schema, written in a markup language like json.
+
+---
+# Where we are right now in fisheries
+
+"There's no common method or definition for what a projection even is." Andre, in August 2022
+
+---
+# Theres a big gap between where we are and where we want to go
+This is not a panacea but a step in the right direction
+
+---
+# Others have taken steps in the right direction
+
+---
+# Bai's text analysis
+Assembled a corpus of stock assessment documents produced by Science Centers or International Organization: Alaska Fisheries Science Center, Northeast Fisheries Science Center, Northwest Fisheries Science Center (NWSC), Pacific Island Science Center (PISC), Southeast Fisheries Science Center, Southwest Fisheries Science Center (SWFSC), Inter-American Tropical Tuna Commission (IATTC), International Commission for the Conservation of Atlantic Tunas (ICCAT), Joint Technical Committee (JTC) of the Pacific Hake/Whiting Treaty, and Western and Central Pacific Fisheries Commission (WCPFC).
+
+---
+# Bai results
+
+&lt;img src="./static/pictures/baichart.jpg" width="600px" /&gt;
 
 
 ---
-# Takeaways 
-* Variation can be aliased by different processes
-* No obvious synchrony or reaction to warming in these results
+# Introduce the R package and schema
 
+.footnote[Wetzel et al. In internal review.]
+
+---
+# What an entry looks like
+
+
+---
+# JSON validator
+
+We can use 
+
+---
+# Shiny app
+https://connect.rstudio.noaa.gov/fishdictionary
+
+---
 # Next steps
-* Examining convergence in all effects models
-* Adapting model selection criteria for time series
-* Incorporating temperature time series applied by other WG members
+
 
 ---
-# References
-* Baudron et al. 2013. Warming temperatures and smaller body sizes: synchronous changes in growth of North Sea Fishes. Global Change Biology. https://doi.org/10.1111/gcb.12514 
-* Miller, T.J. et al 2018. Temporal and environmental variation in growth and maturity and effects on management reference points of Georges Bank Atlantic cod. CJFAS. https://doi.org/10.1139/cjfas-2017-0124
-* Stawitz et al 2014. A state-space approach for detecting growth variation and application to North Pacific groundfish. CJFAS. https://doi.org/10.1139/cjfas-2014-0558 
-* Denechaud et al. 2020. A century of fish growth in relation to climate change, population dynamics and exploitation. Global Change Biology. https://doi.org/10.1111/gcb.15298
+# Open questions
+* What is the peer review process for a dictionary?
+* Package maintenance
+* 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
