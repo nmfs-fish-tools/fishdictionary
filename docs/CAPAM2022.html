@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>A dictionary for fisheries</title>
+    <title>A dictionary for stock assessment</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Chantel Wetzel, Christine Stawitz, Bai Li, Kelli Johnson, Giselle Schmitz  1 NOAA Fisheries,NWFSC, Seattle, WA  2 NOAA Fisheries, OST, Seattle, WA  3 ECS in support of NOAA Fisheries   2022-09-27" />
+    <meta name="author" content="Chantel Wetzel1, Christine Stawitz 2, Bai Li3,  Kelli Johnson1, Giselle Schmitz2  1 NOAA Fisheries,NWFSC, Seattle, WA  2 NOAA Fisheries, OST, Seattle, WA  3 ECS in support of NOAA Fisheries  " />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
@@ -16,13 +16,13 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# A dictionary for fisheries
+# A dictionary for stock assessment
 ]
 .subtitle[
-## Using a state-space growth model
+## to improve clarity and interoperability of different modeling software.
 ]
 .author[
-### Chantel Wetzel, Christine Stawitz, Bai Li, Kelli Johnson, Giselle Schmitz <br>1 NOAA Fisheries,NWFSC, Seattle, WA <br>2 NOAA Fisheries, OST, Seattle, WA<br> 3 ECS in support of NOAA Fisheries <br> 2022-09-27
+### Chantel Wetzel<sup>1</sup>, Christine Stawitz <sup>2</sup>, Bai Li<sup>3</sup>,<br> Kelli Johnson<sup>1</sup>, Giselle Schmitz<sup>2</sup> <br>1 NOAA Fisheries,NWFSC, Seattle, WA <br>2 NOAA Fisheries, OST, Seattle, WA<br> 3 ECS in support of NOAA Fisheries <br>
 ]
 
 ---
@@ -38,19 +38,17 @@ layout: true
 ---
 # Shift to bring data science tools and workflows into science
 
-These tools promise better science in less time
-
-Facilitate remote collaboration
-
-Reproducibility and fixing the retirement problem
+&lt;img src="./static/pictures/openscapes.png" width="600px" style="display: block; margin: auto;" /&gt;
+.footnote[Lowndes et al. &lt;br&gt;&lt;br&gt;]
 
 ---
-# However, these tools have limited promise without standardization
+# However, workflow standardization is needed to utilize the tools
 
-Difficult to transfer tools to new locations/species/computer architectures
+* The tool is one step of a workflow
 
-Manual steps in data-pre-processing cannot be performed by computers
+&lt;img src="./static/pictures/dataone.png" width="500px" style="display: block; margin: auto;" /&gt;
 
+.footnote[Find citation &lt;br&gt;&lt;br&gt;]
 
 ---
 # Protocols and schema 
@@ -61,57 +59,95 @@ Manual steps in data-pre-processing cannot be performed by computers
 &lt;img src="./static/pictures/schema.png" height="200px" /&gt;
 ]
 
-If you are sending data over the web, you're using a protocol. Any big data scheme that is used in data science workflows typically adheres to a schema, written in a markup language like json.
+Web technologies have advanced so quickly in part due to standard formats and structures.
 
 ---
-# Where we are right now in fisheries
+# We are a long way from this in fisheries
 
-"There's no common method or definition for what a projection even is." Andre, in August 2022
-
----
-# Theres a big gap between where we are and where we want to go
-This is not a panacea but a step in the right direction
-
----
-# Others have taken steps in the right direction
-
----
-# Bai's text analysis
-Assembled a corpus of stock assessment documents produced by Science Centers or International Organization: Alaska Fisheries Science Center, Northeast Fisheries Science Center, Northwest Fisheries Science Center (NWSC), Pacific Island Science Center (PISC), Southeast Fisheries Science Center, Southwest Fisheries Science Center (SWFSC), Inter-American Tropical Tuna Commission (IATTC), International Commission for the Conservation of Atlantic Tunas (ICCAT), Joint Technical Committee (JTC) of the Pacific Hake/Whiting Treaty, and Western and Central Pacific Fisheries Commission (WCPFC).
+.pull-left[
+![](./static/pictures/Andre_portrait_FINAL_SCAN.jpg)&lt;!-- --&gt;
+]
+.pull-right[
+.hand-blue[
+"There's no common method or definition for what a projection is." Andr&amp;eacute;, in August 2022
+]
+]
 
 ---
-# Bai results
+# In other words..
 
-&lt;img src="./static/pictures/baichart.jpg" width="600px" /&gt;
+&lt;img src="./static/pictures/standards_2x.png" height="500px" /&gt;
 
 
 ---
-# Introduce the R package and schema
+# A step in the right direction
+
+&lt;img src="./static/pictures/continuum.png" height="400px" /&gt;
+
+
+---
+# This is not a new idea
+* NMFS glossary [Blackhart, Stanton, and Shimada, 2006](http://www.st.nmfs.gov/st4/documents/F_Glossary.pdf)
+* ICES [DATSU](http://datsu.ices.dk/web/selRep.aspx)
+&lt;img src="./static/pictures/Sarda4.png" height="400px" /&gt;
+
+
+---
+# Total use across 20 terms
+&lt;img src="./static/pictures/summedacross.png" width="800px" /&gt;
+The x axis shows terms that were pre-identified as commonly used and sometimes ambiguous terminology.
+
+
+.footnote[Wetzel et al. In internal review. &lt;br&gt;&lt;br&gt;]
+---
+# Use across NOAA Fisheries science centers
+
+&lt;img src="./static/pictures/baichart.png" width="700px" style="display: block; margin: auto;" /&gt;
+The x axis represents alternative text representations of the same term (e.g. CPUE, catch per unit effort).
+
 
 .footnote[Wetzel et al. In internal review.]
 
 ---
-# What an entry looks like
+# {fishdictionary} an `R` package 
+
+&lt;img src="./inst/figures/imgfile.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+
+.footnote[Wetzel et al. In internal review. &lt;br&gt; &lt;br&gt;]
+
+---
+# An entry
+
+&lt;img src="./static/pictures/entry.png" width="600px" style="display: block; margin: auto;" /&gt;
+
+---
+# Uses a common file format with a validator in JSON
+
+&lt;img src="./static/pictures/flowchart.png" width="600px" style="display: block; margin: auto;" /&gt;
 
 
 ---
-# JSON validator
+class: middle
 
-We can use 
+# https://github.org/nmfs-fish-tools/fishdictionary
+
 
 ---
-# Shiny app
-https://connect.rstudio.noaa.gov/fishdictionary
+# Increasing coordination and interdisciplinarity
+
+* Gives a common language across silos and disciplines
+* Rise of code and tool sharing across the US
+* We are creating a platform but need others to help populate it!
 
 ---
 # Next steps
 
-
----
-# Open questions
-* What is the peer review process for a dictionary?
-* Package maintenance
-* 
+* Adding an entry via the web application
+* Search and filtering
+* What is the peer review process for dictionary entries?
+* Synergy with international standardization efforts
+* What would help you contribute?
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

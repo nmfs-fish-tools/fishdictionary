@@ -1,7 +1,7 @@
 ---
-title:  "A dictionary for fisheries"
-subtitle: "Using a state-space growth model"
-author: "Chantel Wetzel, Christine Stawitz, Bai Li, Kelli Johnson, Giselle Schmitz <br>1 NOAA Fisheries,NWFSC, Seattle, WA <br>2 NOAA Fisheries, OST, Seattle, WA<br> 3 ECS in support of NOAA Fisheries <br> `r Sys.Date()`"
+title:  "A dictionary for stock assessment"
+subtitle: "to improve clarity and interoperability of different modeling software."
+author: "Chantel Wetzel<sup>1</sup>, Christine Stawitz <sup>2</sup>, Bai Li<sup>3</sup>,<br> Kelli Johnson<sup>1</sup>, Giselle Schmitz<sup>2</sup> <br>1 NOAA Fisheries,NWFSC, Seattle, WA <br>2 NOAA Fisheries, OST, Seattle, WA<br> 3 ECS in support of NOAA Fisheries <br> "
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css", "slides-style.css", "tufte.css"]
@@ -37,23 +37,21 @@ xaringanExtra::use_tile_view()
 ---
 # Shift to bring data science tools and workflows into science
 
-These tools promise better science in less time
-
-Facilitate remote collaboration
-
-Reproducibility and fixing the retirement problem
-
-```{r openscapes, echo=FALSE}
+```{r openscapes, echo=FALSE, out.width="600px", fig.align='center'}
 knitr::include_graphics("./static/pictures/openscapes.png")
 ```
+.footnote[Lowndes et al. <br><br>]
 
 ---
-# However, these tools have limited promise without standardization
+# However, workflow standardization is needed to utilize the tools
 
-Difficult to transfer tools to new locations/species/computer architectures
+* The tool is one step of a workflow
 
-Manual steps in data-pre-processing cannot be performed by computers
+```{r dataone, echo=FALSE, out.width="500px", fig.align='center'}
+knitr::include_graphics("./static/pictures/dataone.png")
+```
 
+.footnote[Find citation <br><br>]
 
 ---
 # Protocols and schema 
@@ -68,23 +66,46 @@ knitr::include_graphics("./static/pictures/schema.png")
 ```
 ]
 
-If you are sending data over the web, you're using a protocol. Any big data scheme that is used in data science workflows typically adheres to a schema, written in a markup language like json.
+Web technologies have advanced so quickly in part due to standard formats and structures.
 
 ---
-# Where we are right now in fisheries
+# We are a long way from this in fisheries
 
-"There's no common method or definition for what a projection even is." Andre, in August 2022
+.pull-left[
+```{r andre, echo=FALSE}
+knitr::include_graphics("./static/pictures/Andre_portrait_FINAL_SCAN.jpg")
+```
+]
+.pull-right[
+.hand-blue[
+"There's no common method or definition for what a projection is." Andr&eacute;, in August 2022
+]
+]
 
 ---
-# Theres a big gap between where we are and where we want to go
-This is not a panacea but a step in the right direction
+# In other words..
+
+```{r echo=FALSE, out.height="500px"}
+knitr::include_graphics("./static/pictures/standards_2x.png")
+```
+
 
 ---
-# Others have taken steps in the right direction
+# A step in the right direction
+
+```{r, echo=FALSE, out.height="400px"}
+knitr::include_graphics("./static/pictures/continuum.png")
+```
+
 
 ---
-# Bai's text analysis
-Assembled a corpus of stock assessment documents produced by Science Centers or International Organization: Alaska Fisheries Science Center, Northeast Fisheries Science Center, Northwest Fisheries Science Center (NWSC), Pacific Island Science Center (PISC), Southeast Fisheries Science Center, Southwest Fisheries Science Center (SWFSC), Inter-American Tropical Tuna Commission (IATTC), International Commission for the Conservation of Atlantic Tunas (ICCAT), Joint Technical Committee (JTC) of the Pacific Hake/Whiting Treaty, and Western and Central Pacific Fisheries Commission (WCPFC).
+# This is not a new idea
+* NMFS glossary [Blackhart, Stanton, and Shimada, 2006](http://www.st.nmfs.gov/st4/documents/F_Glossary.pdf)
+* ICES [DATSU](http://datsu.ices.dk/web/selRep.aspx)
+```{r, echo=FALSE, out.height="400px"}
+knitr::include_graphics("./static/pictures/Sarda4.png")
+```
+
 
 ---
 # Total use across 20 terms
@@ -94,12 +115,12 @@ knitr::include_graphics("./static/pictures/summedacross.png")
 The x axis shows terms that were pre-identified as commonly used and sometimes ambiguous terminology.
 
 
-.footnote[Wetzel et al. In internal review.]
+.footnote[Wetzel et al. In internal review. <br><br>]
 ---
 # Use across NOAA Fisheries science centers
 
-```{r textanalysis, echo=FALSE, out.width="800px"}
-knitr::include_graphics("./static/pictures/baichart.jpg")
+```{r textanalysis, echo=FALSE, out.width="700px", fig.align='center'}
+knitr::include_graphics("./static/pictures/baichart.png")
 ```
 The x axis represents alternative text representations of the same term (e.g. CPUE, catch per unit effort).
 
@@ -107,29 +128,48 @@ The x axis represents alternative text representations of the same term (e.g. CP
 .footnote[Wetzel et al. In internal review.]
 
 ---
-# Introduce the R package and schema
+# {fishdictionary} an `R` package 
 
-.footnote[Wetzel et al. In internal review.]
+```{r echo=FALSE, out.width="400px", fig.align='center'}
+knitr::include_graphics("./inst/figures/imgfile.png")
+```
 
----
-# What an entry looks like
 
-
----
-# JSON validator
-
-We can use 
+.footnote[Wetzel et al. In internal review. <br> <br>]
 
 ---
-# Shiny app
-https://connect.rstudio.noaa.gov/fishdictionary
+# An entry
+
+```{r, echo=FALSE, out.width="600px", fig.align="center"}
+knitr::include_graphics("./static/pictures/entry.png")
+```
+
+---
+# Uses a common file format with a validator in JSON
+
+```{r validator, echo=FALSE, out.width="600px", fig.align="center"}
+knitr::include_graphics("./static/pictures/flowchart.png")
+```
+
+
+---
+class: middle
+
+# https://github.org/nmfs-fish-tools/fishdictionary
+
+
+---
+# Increasing coordination and interdisciplinarity
+
+* Gives a common language across silos and disciplines
+* Rise of code and tool sharing across the US
+* We are creating a platform but need others to help populate it!
 
 ---
 # Next steps
 
-
----
-# Open questions
-* What is the peer review process for a dictionary?
-* Package maintenance
-* 
+* Adding an entry via the web application
+* Search and filtering
+* What is the peer review process for dictionary entries?
+* Synergy with international standardization efforts
+* What would help you contribute?
