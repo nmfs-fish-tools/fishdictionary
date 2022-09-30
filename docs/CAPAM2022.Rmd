@@ -40,7 +40,7 @@ xaringanExtra::use_tile_view()
 ```{r openscapes, echo=FALSE, out.width="600px", fig.align='center'}
 knitr::include_graphics("./static/pictures/openscapes.png")
 ```
-.footnote[Lowndes et al. <br><br>]
+.footnote[Lowndes et al. 2017 <br><br>]
 
 ---
 # However, workflow standardization is needed to utilize the tools
@@ -51,7 +51,7 @@ knitr::include_graphics("./static/pictures/openscapes.png")
 knitr::include_graphics("./static/pictures/dataone.png")
 ```
 
-.footnote[Find citation <br><br>]
+.footnote[Reichman et al. 2011. <br><br>]
 
 ---
 # Protocols and schema 
@@ -77,7 +77,7 @@ knitr::include_graphics("./static/pictures/Andre_portrait_FINAL_SCAN.jpg")
 ```
 ]
 .pull-right[
-.hand-blue[
+.bluebox[
 "There's no common method or definition for what a projection is." Andr&eacute;, in August 2022
 ]
 ]
@@ -112,7 +112,6 @@ knitr::include_graphics("./static/pictures/Sarda4.png")
 ```{r texttotal, echo=FALSE, out.width="800px"}
 knitr::include_graphics("./static/pictures/summedacross.png")
 ```
-The x axis shows terms that were pre-identified as commonly used and sometimes ambiguous terminology.
 
 
 .footnote[Wetzel et al. In internal review. <br><br>]
@@ -122,7 +121,7 @@ The x axis shows terms that were pre-identified as commonly used and sometimes a
 ```{r textanalysis, echo=FALSE, out.width="700px", fig.align='center'}
 knitr::include_graphics("./static/pictures/baichart.png")
 ```
-The x axis represents alternative text representations of the same term (e.g. CPUE, catch per unit effort).
+The x axis represents alternative text representations of the same term.
 
 
 .footnote[Wetzel et al. In internal review.]
@@ -140,14 +139,14 @@ knitr::include_graphics("./inst/figures/imgfile.png")
 ---
 # An entry
 
-```{r, echo=FALSE, out.width="600px", fig.align="center"}
+```{r, echo=FALSE, out.width="800px", fig.align="center"}
 knitr::include_graphics("./static/pictures/entry.png")
 ```
 
 ---
 # Uses a common file format with a validator in JSON
 
-```{r validator, echo=FALSE, out.width="600px", fig.align="center"}
+```{r validator, echo=FALSE, out.width="700px", fig.align="center"}
 knitr::include_graphics("./static/pictures/flowchart.png")
 ```
 
