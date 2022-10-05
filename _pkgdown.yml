@@ -19,7 +19,6 @@ reference:
   - NaturalLogOfUnfishedRecruitment
   - NumbersAtAge
   - PlusGroup
-  - Projection
   - Recruits
   - Sex
   - SpawnerPerRecruit
@@ -30,8 +29,6 @@ reference:
 - title: R Functions
   contents:
   - add_object
-  - make_full_web
-  - make_hex
   - read_in
   - shiny_dd
 
