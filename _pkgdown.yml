@@ -19,6 +19,7 @@ reference:
   - NaturalLogOfUnfishedRecruitment
   - NumbersAtAge
   - PlusGroup
+  - Projection
   - Recruits
   - Sex
   - SpawnerPerRecruit
@@ -61,5 +62,4 @@ navbar:
       text: Issues
       icon: fas fa-question-circle fa-lg
       href: https://github.com/nmfs-fish-tools/fishdictionary/issues
-
       

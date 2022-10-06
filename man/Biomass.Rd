@@ -16,7 +16,8 @@ Additional ambiguity can come from the lack of knowledge regarding the
 unit of measurement, which should always be metric tons. Some alternatives
 are not interchangeable because they are in different units, e.g.,
 abundance, which is in terms of numbers rather than weight.}
-\item{Alternatives}{stock biomass, total biomass, abundance (numbers of fish), biomass wet weight, biomass index}
+\item{Alternatives}{stock biomass, total biomass, abundance (numbers of fish),
+biomass wet weight, biomass index}
 \item{Range of possible values}{0--Inf}
 \item{Units}{mt}
 }
