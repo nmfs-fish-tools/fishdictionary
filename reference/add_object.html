@@ -68,16 +68,22 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">add_object</span><span class="op">(</span><span class="va">json_obj</span>, <span class="va">input_list</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">add_object</span><span class="op">(</span><span class="va">input_list</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>input_list</dt>
 <dd><p>A list of fields corresponding to entries. Must include
-<code>name,description,Units</code></p></dd>
+<code>name,description,Examples, Units, Rationale, Alternatives, Range of possible values</code></p></dd>
 
 </dl></div>
+    <div id="value">
+    <h2>Value</h2>
+    
+
+<p>An R list in the JSON format which includes the new term.</p>
+    </div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
