@@ -19,7 +19,7 @@ abundance, which is in terms of numbers rather than weight.}
 \item{Alternatives}{stock biomass, total biomass, abundance (numbers of fish),
 biomass wet weight, biomass index}
 \item{Range of possible values}{0--Inf}
-\item{Units}{mt}
+\item{Units}{}
 }
 }
 \usage{

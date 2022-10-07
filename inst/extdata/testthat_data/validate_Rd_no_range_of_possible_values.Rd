@@ -18,7 +18,7 @@ are not interchangeable because they are in different units, e.g.,
 abundance, which is in terms of numbers rather than weight.}
 \item{Alternatives}{stock biomass, total biomass, abundance (numbers of fish),
 biomass wet weight, biomass index}
-\item{Range of possible values}{0--Inf}
+\item{Range of possible values}{}
 \item{Units}{mt}
 }
 }

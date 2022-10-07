@@ -4,11 +4,14 @@
 \alias{add_object}
 \title{Function to add an object to the JSON}
 \usage{
-add_object(json_obj, input_list)
+add_object(input_list)
 }
 \arguments{
 \item{input_list}{A list of fields corresponding to entries. Must include
-\code{name,description,Units}}
+\code{name,description,Examples, Units, Rationale, Alternatives, Range of possible values}}
+}
+\value{
+An R list in the JSON format which includes the new term.
 }
 \description{
 Function to add an object to the JSON

@@ -6,8 +6,7 @@
 \title{Biomass}
 \format{
 \describe{
-\item{Examples}{spawning biomass, age three-plus biomass, exploitable
-biomass, January 1 biomass}
+\item{Examples}{}
 \item{Rationale}{Measurements of biomass should be better defined making
 it clear what year classes and sexes it includes. Historically, verbose
 labels, e.g., January 1 biomass of age-three plus fish in 2022, are not
