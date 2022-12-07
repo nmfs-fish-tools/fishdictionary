@@ -11,12 +11,12 @@ library(RColorBrewer)
 
 # Define keyword ---------------------------------------------------------------
 
-z <- data.frame(
-  keyword = c(
-    "instantaneous mortality rate|z"
-  ),
-  group = "instantaneous mortality rate"
-)
+# z <- data.frame(
+#   keyword = c(
+#     "instantaneous total mortality rate|z"
+#   ),
+#   group = "instantaneous mortality rate"
+# )
 
 spawning_biomass <- data.frame(
   keyword = c(
@@ -33,10 +33,8 @@ cpue <- data.frame(
     "catch per unit effort|cpue",
     "catch rate", 
     "index of abundance",
-    "standardized fishery catch time series",
     "catch per effort",
-    "fishing success",
-    "availability"
+    "fishing success"
   ),
   group = "catch per unit effort"
 )
@@ -44,7 +42,8 @@ cpue <- data.frame(
 catch <- data.frame(
   keyword = c(
     "catch",
-    "total mortality"
+    "total mortality", 
+    "harvest"
   ),
   group = "catch"
 )
@@ -52,8 +51,7 @@ catch <- data.frame(
 landings <- data.frame(
   keyword = c(
     "landings",
-    "retained catch",
-    "wanted catch"
+    "retained catch"
   ),
   group = "landings"
 )
@@ -75,13 +73,13 @@ sex <- data.frame(
   group = "sex"
 )
 
-spr <- data.frame(
-  keyword = c(
-    "spawner per recruit|spr",
-    "30%spr|spr30%|30spr|spr30"
-  ),
-  group = "spawner per recruit"
-)
+# spr <- data.frame(
+#   keyword = c(
+#     "spawner per recruit|spr",
+#     "spawning potential ratio"
+#   ),
+#   group = "spawner per recruit"
+# )
 
 weight <- data.frame(
   keyword = c(
@@ -102,8 +100,8 @@ lnr0 <- data.frame(
   group = "natural log of unfished recruitment"
 )
 
-keyword_map <- rbind(z, spawning_biomass, cpue, catch, landings,
-                 projection, sex, spr, weight, lnr0)
+keyword_map <- rbind(catch, cpue, landings,
+                     lnr0, projection, sex, spawning_biomass, weight)
 keyword_map$keyword_id <- as.factor(1:nrow(keyword_map))
 keyword <- keyword_map$keyword
 
@@ -222,9 +220,13 @@ xlsx::write.xlsx(presence_database, file=xlsx_path, sheetName="presence", append
 xlsx::write.xlsx(proportion_database, file=xlsx_path, sheetName="proportion", append=TRUE, row.names=FALSE)
 
 # Upload xlsx to Google Drive
-# Google Drive folder id
-id_googledrive <- "1BUsYYd11lE2TECqHru5tX6LwkMniVnKv"
-googledrive::drive_upload(media = xlsx_path, path = as_id(id_googledrive), overwrite = TRUE, type="spreadsheet")
+authorize_GoogleDrive <- FALSE
+if (authorize_GoogleDrive) {
+  # Google Drive folder id
+  id_googledrive <- "1BUsYYd11lE2TECqHru5tX6LwkMniVnKv"
+  googledrive::drive_upload(media = xlsx_path, path = as_id(id_googledrive), overwrite = TRUE, type="spreadsheet")
+}
+
 
 # Plot results ------------------------------------------------------------
 xlsx_path <- here::here("TextAnalysis", "top10_analysis.xlsx")
@@ -244,19 +246,17 @@ data_merge <- merge(data_reshape, keyword_map, by= "keyword")
 sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Science_Center, data = data_merge, sum)
 sum_by_group <- sum_by_group[order(sum_by_group$keyword_id),]
 group <- unique(sum_by_group$group)
-figure <- vector(mode="list", length=length(group))
 
-for (i in 1:length(group)){
-  figure[[i]] <- ggplot(data = sum_by_group[sum_by_group$group==group[i], ], aes(x=keyword_id, y=value, fill=Science_Center)) +
-    geom_bar(position='dodge', stat='identity') +
-    labs(
-      x = group[i],
-      y = "Frequency"
-    )+
-    theme_bw()
-}
-
-jpeg(filename = here::here("TextAnalysis", "top10_barplot.jpg"), width=300, height=270, units="mm", res=1200)
-(figure[[1]] + figure[[2]] + figure[[3]] + figure[[4]] + figure[[5]])/
-  (figure[[6]] + figure[[7]] + figure[[8]] + figure[[9]] + figure[[10]])
+library("scales")
+library(viridis)
+jpeg(filename = here::here("TextAnalysis", "top10_barplot.jpg"), width=200, height=150, units="mm", res=1200)
+ggplot(sum_by_group, aes(fill=Science_Center, y=value, x=keyword_id)) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~group, scales = "free_x") +
+  labs(
+    x = "Term ID",
+    y = "Frequency"
+  ) +
+  scale_fill_viridis(discrete = TRUE) +
+  theme_bw()
 dev.off()

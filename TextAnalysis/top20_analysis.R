@@ -9,88 +9,101 @@ library(RColorBrewer)
 
 # Download stock assessment reports from Google Drive -------------
 
-# googledrive set-up: https://github.com/nmfs-openscapes/GoogleDrive1
-download_assessments <- function(googledrive_url, folder_name, subfolder_name) {
+## If authorize_GoogleDrive <- TRUE:
+## Users need to authorize googledrive package to access your Google Drive
+## Please follow the instructions from https://googledrive.tidyverse.org/reference/drive_auth.html and https://github.com/nmfs-openscapes/GoogleDrive1 to
+## authorize googledrive
 
-  # Get the files in the folder
-  dir_files <- googledrive::drive_ls(path = googledrive_url)
-  file_name <- dir_files$name
+## If authorize_GoogleDrive <- FALSE:
+## Users need to manually download stock assessment reports from the
+## Assessment Docs Google Drive folder (https://drive.google.com/drive/folders/1uyLVjf7Xu2iMY6dhEjAAkB4l2vtSDMw9?usp=share_link) to fishdictionary/StockAssessment folder
+## The folder structure looks
 
-  # Create folders to save downloaded files
-  if (!dir.exists(here::here(folder_name))) dir.create(here::here(folder_name))
-  if (!dir.exists(here::here(folder_name, subfolder_name))) dir.create(here::here(folder_name, subfolder_name))
+authorize_GoogleDrive <- FALSE
+if (authorize_GoogleDrive) {
+  # googledrive set-up: https://github.com/nmfs-openscapes/GoogleDrive1
+  download_assessments <- function(googledrive_url, folder_name, subfolder_name) {
 
-  # Download files from Google Drive
-  for (i in 1:length(dir_files$id)) {
-    googledrive::drive_download(file = dir_files$id[i], overwrite = TRUE, path = here::here(folder_name, subfolder_name, file_name[i]))
+    # Get the files in the folder
+    dir_files <- googledrive::drive_ls(path = googledrive_url)
+    file_name <- dir_files$name
+
+    # Create folders to save downloaded files
+    if (!dir.exists(here::here(folder_name))) dir.create(here::here(folder_name))
+    if (!dir.exists(here::here(folder_name, subfolder_name))) dir.create(here::here(folder_name, subfolder_name))
+
+    # Download files from Google Drive
+    for (i in 1:length(dir_files$id)) {
+      googledrive::drive_download(file = dir_files$id[i], overwrite = TRUE, path = here::here(folder_name, subfolder_name, file_name[i]))
+    }
   }
+
+  # Download AFSC stock assessment reports
+  download_assessments(
+    googledrive_url = "https://drive.google.com/drive/folders/1vbxiADIsjnCPGyOf-v4zTexOUSTidMTA",
+    folder_name = file.path("StockAssessment"),
+    subfolder_name = "AFSC"
+  )
+
+  # Download NEFSC stock assessment reports
+  download_assessments(
+    googledrive_url = "https://drive.google.com/drive/folders/1edP73M7Bd4SpGLsgXIS8-jlqclA1QTZ9",
+    folder_name = file.path("StockAssessment"),
+    subfolder_name = "NEFSC"
+  )
+
+  # Download NWFSC stock assessment reports
+  download_assessments(
+    googledrive_url = "https://drive.google.com/drive/folders/1UHv3f7JDkz3T6OUFNGiurBZIWR_EzyQq",
+    folder_name = file.path("StockAssessment"),
+    subfolder_name = "NWFSC"
+  )
+
+  # Download PIFSC stock assessment reports
+  download_assessments(
+    googledrive_url = "https://drive.google.com/drive/folders/11I-3gwehVMEK_0aAkuytijNs7PXsu_e-",
+    folder_name = file.path("StockAssessment"),
+    subfolder_name = "PIFSC"
+  )
+
+  # Download SEFSC stock assessment reports
+  download_assessments(
+    googledrive_url = "https://drive.google.com/drive/folders/12-09nqC7CvKfL2j1JX8ooi_bgMob2c1I",
+    folder_name = file.path("StockAssessment"),
+    subfolder_name = "SEFSC"
+  )
+
+  # Download SWFSC stock assessment reports
+  download_assessments(
+    googledrive_url = "https://drive.google.com/drive/folders/1IqbncWlwbSwmBKroIfo-C9ckI_uGe6NG",
+    folder_name = file.path("StockAssessment"),
+    subfolder_name = "SWFSC"
+  )
 }
-
-# Download AFSC stock assessment reports
-download_assessments(
-  googledrive_url = "https://drive.google.com/drive/folders/1vbxiADIsjnCPGyOf-v4zTexOUSTidMTA",
-  folder_name = file.path("StockAssessment"),
-  subfolder_name = "AFSC"
-)
-
-# Download NEFSC stock assessment reports
-download_assessments(
-  googledrive_url = "https://drive.google.com/drive/folders/1edP73M7Bd4SpGLsgXIS8-jlqclA1QTZ9",
-  folder_name = file.path("StockAssessment"),
-  subfolder_name = "NEFSC"
-)
-
-# Download NWFSC stock assessment reports
-download_assessments(
-  googledrive_url = "https://drive.google.com/drive/folders/1UHv3f7JDkz3T6OUFNGiurBZIWR_EzyQq",
-  folder_name = file.path("StockAssessment"),
-  subfolder_name = "NWFSC"
-)
-
-# Download PIFSC stock assessment reports
-download_assessments(
-  googledrive_url = "https://drive.google.com/drive/folders/11I-3gwehVMEK_0aAkuytijNs7PXsu_e-",
-  folder_name = file.path("StockAssessment"),
-  subfolder_name = "PIFSC"
-)
-
-# Download SEFSC stock assessment reports
-download_assessments(
-  googledrive_url = "https://drive.google.com/drive/folders/12-09nqC7CvKfL2j1JX8ooi_bgMob2c1I",
-  folder_name = file.path("StockAssessment"),
-  subfolder_name = "SEFSC"
-)
-
-# Download SWFSC stock assessment reports
-download_assessments(
-  googledrive_url = "https://drive.google.com/drive/folders/1IqbncWlwbSwmBKroIfo-C9ckI_uGe6NG",
-  folder_name = file.path("StockAssessment"),
-  subfolder_name = "SWFSC"
-)
 
 # Define keyword ---------------------------------------------------------------
 
 keyword <- c(
   "biomass|b|abundance",
-  "spawning biomass|sb|spawning stock biomass|ssb|spawning stock output|sso|spawning output",
+  "spawning biomass|sb|spawning stock biomass|ssb|spawning stock output|sso|mature biomass|spawners",
   "unfished|virgin|initial|equilibrium|unfished equilibrium",
-  "recruits|age-0 fish",
-  "catch|total mortality",
-  "landings|retained catch|wanted catch",
-  "catch per unit effort|cpue|catch rate|index of abundance|standardized fishery catch time series|catch per effort|fishing success|availability",
-  "maximum sustainable yield|msy|msyproxy",
-  "instantaneous mortality rate|z",
-  "instantaneous fishing mortality rate|f|harvest rate|exploitation rate|finite fishing mortality|apical f",
-  "fishing mortality at maximum sustainable yield|fproxy|f_msy|fmsy",
-  "spawning per recruit|spr|spr30%|30%spr",
-  "weight|kg|mass",
+  "recruitment",
+  "recruits|recruit|age-0 fish|age-1 fish",
+  "catch|total mortality|harvest",
+  "catch per unit effort|cpue|catch rate|index of abundance|catch per effort|fishing success",
+  "landings|retained catch",
+  "spawning per recruit|spawning potential ratio|spr",
+  "maximum sustainable yield|msy",
+  "instantaneous total mortality rate|z",
+  "fishing mortality rate|f|instantaneous fishing mortality rate|harvest rate|exploitation rate|finite fishing mortality|apical f",
+  "fishing mortality at maximum sustainable yield|fmsy",
+  "weight|mass",
   "length composition|length frequency|length observation",
   "age composition|age frequency|age observation",
   "projection|forecast|prediction",
   "sex|gender",
-  "natural log of unfished recruitment|logr0|lnr0|r0|log(r0)",
-  "plus group",
-  "cohort|recruit"
+  "natural log of unfished recruitment|lnr0|logr0|logr_0|log(r0)|r0",
+  "plus group"
 )
 
 # Create keywords database ----------------------------------------------------------------
@@ -101,15 +114,23 @@ subfolder_name <- list.dirs(path = working_path, full.names = FALSE, recursive =
 
 # Create keyword database
 col_name <- c("ID", "Science_Center", "File_Path", keyword)
-frequency_database <- presence_database <- proportion_database <-
+frequency_database <- 
+  presence_database <- 
+  proportion_database <-
   data.frame(matrix(NA, ncol = length(col_name)))
-colnames(frequency_database) <- colnames(presence_database) <- colnames(proportion_database) <-
+
+colnames(frequency_database) <- 
+  colnames(presence_database) <- 
+  colnames(proportion_database) <-
   col_name
 
 for (subfolder_id in seq_along(subfolder_path)) {
+
   file_path <- list.files(subfolder_path[subfolder_id], recursive = FALSE, full.names = TRUE)
 
   for (file_id in seq_along(file_path)) {
+    
+    # cat("file:", file_path[file_id], "\n")
     file <- file_path[file_id]
 
     # Create metadata of files
@@ -202,9 +223,11 @@ xlsx::write.xlsx(presence_database, file = xlsx_path, sheetName = "presence", ap
 xlsx::write.xlsx(proportion_database, file = xlsx_path, sheetName = "proportion", append = TRUE, row.names = FALSE)
 
 # Upload xlsx to Google Drive
-# Google Drive folder id
-id_googledrive <- "1BUsYYd11lE2TECqHru5tX6LwkMniVnKv"
-googledrive::drive_upload(media = xlsx_path, path = as_id(id_googledrive), overwrite = TRUE, type = "spreadsheet")
+if (authorize_GoogleDrive) {
+  # Google Drive folder id
+  id_googledrive <- "1BUsYYd11lE2TECqHru5tX6LwkMniVnKv"
+  googledrive::drive_upload(media = xlsx_path, path = as_id(id_googledrive), overwrite = TRUE, type = "spreadsheet")
+}
 
 # Plot results ------------------------------------------------------------
 xlsx_path <- here::here("TextAnalysis", "top20_analysis.xlsx")
@@ -221,22 +244,22 @@ xlabels <- c(
   "spawning biomass",
   "unfished",
   "recruitment",
+  "recruit(s)",
   "catch",
-  "landings",
   "catch per unit effort",
-  "MSY",
-  "Z",
-  "F",
-  "FMSY",
+  "landings",
   "spawner per recruit",
+  "maximum sustainable yield",
+  "instantaneous total mortality rate",
+  "fishing mortality",
+  "FMSY",
   "weight",
   "length composition",
   "age composition",
   "projection",
   "sex",
   "natural log of unfished recruitment",
-  "plus group",
-  "cohort"
+  "plus group"
 )
 
 # barplot
@@ -256,7 +279,7 @@ dev.off()
 
 jpeg(filename = here::here("TextAnalysis", "top20_presence.jpg"), width = 200, height = 120, units = "mm", res = 1200)
 par(mar = c(6, 4, 1, 1), mfrow = c(1, 1))
-presence_barplot <- barplot(height = word_presence, xaxt = "n", ylab = "Frequency") # range: 26-84, median:67.5
+presence_barplot <- barplot(height = word_presence, xaxt = "n", ylab = "Frequency") # range: 26-83, median:68
 text(presence_barplot - 0.25, par("usr")[3] - 0.25, xlabels, xpd = TRUE, srt = 40, adj = 1, cex = 0.7)
 dev.off()
 
