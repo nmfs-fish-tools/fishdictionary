@@ -32,6 +32,8 @@ reference:
   - add_object
   - read_in
   - shiny_dd
+  - validate_Rd
+  
 
 navbar:
   structure:
