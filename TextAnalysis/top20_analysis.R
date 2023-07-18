@@ -111,15 +111,15 @@ working_path <- here::here("StockAssessment")
 subfolder_path_all <- list.dirs(path = working_path, full.names = TRUE, recursive = FALSE)
 subfolder_name_all <- list.dirs(path = working_path, full.names = FALSE, recursive = FALSE)
 
-subfolder_info <- list(1, 2, 3:length(subfolder_path_all))
-names(subfolder_info) <- c("Australia", "ICES", "NOAA")
+subfolder_info <- list(1, 2, 3:length(subfolder_path_all), 1:length(subfolder_path_all))
+names(subfolder_info) <- c("Australia", "ICES", "NOAA", "All")
  
 for (org in seq_along(subfolder_info)){
   subfolder_path <- subfolder_path_all[subfolder_info[[org]]]
   subfolder_name <- subfolder_name_all[subfolder_info[[org]]]
   
   # Create keyword database
-  col_name <- c("ID", "Science_Center", "File_Path", keyword)
+  col_name <- c("ID", "Source", "File_Path", keyword)
   frequency_database <- 
     presence_database <- 
     proportion_database <-

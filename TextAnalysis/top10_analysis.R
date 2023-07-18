@@ -112,7 +112,7 @@ subfolder_path <- list.dirs(path = working_path, full.names = TRUE, recursive = 
 subfolder_name <- list.dirs(path = working_path, full.names = FALSE, recursive = FALSE)
 
 # Create keyword database
-col_name <- c("ID", "Science_Center", "File_Path", keyword)
+col_name <- c("ID", "Source", "File_Path", keyword)
 frequency_database <- presence_database <- proportion_database <- 
   data.frame(matrix(NA, ncol = length(col_name))) 
 colnames(frequency_database) <- colnames(presence_database) <- colnames(proportion_database) <- 
@@ -234,18 +234,18 @@ proportion_database<-read.csv(file=here::here("TextAnalysis", "top10_proportion.
 colnames(presence_database) <- col_name
 data_reshape <- reshape2::melt(
   presence_database[, c(2, 4:ncol(presence_database))],
-  id = c("Science_Center")
+  id = c("Source")
 )
-colnames(data_reshape) <- c("Science_Center", "keyword", "value")
+colnames(data_reshape) <- c("Source", "keyword", "value")
 
 data_merge <- merge(data_reshape, keyword_map, by= "keyword")
 
-sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Science_Center, data = data_merge, sum)
+sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Source, data = data_merge, sum)
 sum_by_group <- sum_by_group[order(sum_by_group$keyword_id),]
 group <- unique(sum_by_group$group)
 
 jpeg(filename = here::here("TextAnalysis", "top10_barplot_sum.jpg"), width=200, height=150, units="mm", res=1200)
-ggplot(sum_by_group, aes(fill=Science_Center, y=value, x=keyword_id)) + 
+ggplot(sum_by_group, aes(fill=Source, y=value, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~group, scales = "free_x") +
   labs(
@@ -256,12 +256,12 @@ ggplot(sum_by_group, aes(fill=Science_Center, y=value, x=keyword_id)) +
   theme_bw()
 dev.off()
 
-mean_by_group <- aggregate(value ~ keyword+keyword_id+group+Science_Center, data = data_merge, mean)
+mean_by_group <- aggregate(value ~ keyword+keyword_id+group+Source, data = data_merge, mean)
 mean_by_group <- mean_by_group[order(mean_by_group$keyword_id),]
 group <- unique(mean_by_group$group)
 
 jpeg(filename = here::here("TextAnalysis", "top10_barplot_mean.jpg"), width=200, height=150, units="mm", res=1200)
-ggplot(mean_by_group, aes(fill=Science_Center, y=value*100, x=keyword_id)) + 
+ggplot(mean_by_group, aes(fill=Source, y=value*100, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~group, scales = "free_x") +
   labs(
