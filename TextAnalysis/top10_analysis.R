@@ -3,11 +3,11 @@ library(here)
 library(pdftools)
 library(tm)
 library(stringr)
-library(xlsx)
-library(ggplot2)
-library(patchwork) #devtools::install_github("thomasp85/patchwork")
 library(wordcloud)
 library(RColorBrewer)
+library(ggplot2)
+library(scales)
+library(viridis)
 
 # Define keyword ---------------------------------------------------------------
 
@@ -214,10 +214,9 @@ proportion_database <- rbind(
 )
 proportion_database[nrow(proportion_database), "ID"] <- "Sum"
 
-xlsx_path <- here::here("TextAnalysis", "top10_analysis.xlsx")
-xlsx::write.xlsx(frequency_database, file=xlsx_path, sheetName="frequency", row.names=FALSE)
-xlsx::write.xlsx(presence_database, file=xlsx_path, sheetName="presence", append=TRUE, row.names=FALSE)
-xlsx::write.xlsx(proportion_database, file=xlsx_path, sheetName="proportion", append=TRUE, row.names=FALSE)
+write.csv(frequency_database, file=here::here("TextAnalysis", "top10_frequency.csv"), row.names=FALSE)
+write.csv(presence_database, file=here::here("TextAnalysis", "top10_presence.csv"), row.names=FALSE)
+write.csv(proportion_database, file=here::here("TextAnalysis", "top10_proportion.csv"), row.names=FALSE)
 
 # Upload xlsx to Google Drive
 authorize_GoogleDrive <- FALSE
@@ -227,12 +226,10 @@ if (authorize_GoogleDrive) {
   googledrive::drive_upload(media = xlsx_path, path = as_id(id_googledrive), overwrite = TRUE, type="spreadsheet")
 }
 
-
 # Plot results ------------------------------------------------------------
-xlsx_path <- here::here("TextAnalysis", "top10_analysis.xlsx")
-frequency_database <- xlsx::read.xlsx(file=xlsx_path, sheetName="frequency")
-presence_database<-xlsx::read.xlsx(file=xlsx_path, sheetName="presence")
-proportion_database<-xlsx::read.xlsx(file=xlsx_path, sheetName="proportion")
+frequency_database <- read.csv(file=here::here("TextAnalysis", "top10_frequency.csv"))
+presence_database<-read.csv(file=here::here("TextAnalysis", "top10_presence.csv"))
+proportion_database<-read.csv(file=here::here("TextAnalysis", "top10_proportion.csv"))
 
 colnames(presence_database) <- col_name
 data_reshape <- reshape2::melt(
@@ -247,15 +244,29 @@ sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Science_Center, data 
 sum_by_group <- sum_by_group[order(sum_by_group$keyword_id),]
 group <- unique(sum_by_group$group)
 
-library("scales")
-library(viridis)
-jpeg(filename = here::here("TextAnalysis", "top10_barplot.jpg"), width=200, height=150, units="mm", res=1200)
+jpeg(filename = here::here("TextAnalysis", "top10_barplot_sum.jpg"), width=200, height=150, units="mm", res=1200)
 ggplot(sum_by_group, aes(fill=Science_Center, y=value, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~group, scales = "free_x") +
   labs(
     x = "Term ID",
     y = "Frequency"
+  ) +
+  scale_fill_viridis(discrete = TRUE) +
+  theme_bw()
+dev.off()
+
+mean_by_group <- aggregate(value ~ keyword+keyword_id+group+Science_Center, data = data_merge, mean)
+mean_by_group <- mean_by_group[order(mean_by_group$keyword_id),]
+group <- unique(mean_by_group$group)
+
+jpeg(filename = here::here("TextAnalysis", "top10_barplot_mean.jpg"), width=200, height=150, units="mm", res=1200)
+ggplot(mean_by_group, aes(fill=Science_Center, y=value*100, x=keyword_id)) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~group, scales = "free_x") +
+  labs(
+    x = "Term ID",
+    y = "Presence (%)"
   ) +
   scale_fill_viridis(discrete = TRUE) +
   theme_bw()
