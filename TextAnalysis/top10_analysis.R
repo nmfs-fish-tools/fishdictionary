@@ -23,7 +23,7 @@ spawning_biomass <- data.frame(
     "spawning biomass|sb",
     "spawning stock biomass|ssb", 
     "spawning output",
-    "spawning stock output|sso"
+    "spawning stock output|sso|spawners|effective spawning output"
   ),
   group = "spawning biomass"
 )
@@ -33,8 +33,7 @@ cpue <- data.frame(
     "catch per unit effort|cpue",
     "catch rate", 
     "index of abundance",
-    "catch per effort",
-    "fishing success"
+    "catch per effort|fishing success"
   ),
   group = "catch per unit effort"
 )
@@ -43,7 +42,8 @@ catch <- data.frame(
   keyword = c(
     "catch",
     "total mortality", 
-    "harvest"
+    "harvest", 
+    "total removals"
   ),
   group = "catch"
 )
@@ -81,19 +81,19 @@ sex <- data.frame(
 #   group = "spawner per recruit"
 # )
 
-weight <- data.frame(
+mass <- data.frame(
   keyword = c(
-    "weight",
-    "mass"
+    "mass",
+    "weight"
   ),
-  group = "weight"
+  group = "mass"
 )
 
 lnr0 <- data.frame(
   keyword = c(
     "natural log of unfished recruitment|lnr0",
     "logr0",
-    "logr_0",
+    # "logr_0",
     "log(r0)",
     "r0"
   ),
@@ -101,7 +101,7 @@ lnr0 <- data.frame(
 )
 
 keyword_map <- rbind(catch, cpue, landings,
-                     lnr0, projection, sex, spawning_biomass, weight)
+                     lnr0, projection, sex, spawning_biomass, mass)
 keyword_map$keyword_id <- as.factor(1:nrow(keyword_map))
 keyword <- keyword_map$keyword
 
@@ -112,7 +112,7 @@ subfolder_path <- list.dirs(path = working_path, full.names = TRUE, recursive = 
 subfolder_name <- list.dirs(path = working_path, full.names = FALSE, recursive = FALSE)
 
 # Create keyword database
-col_name <- c("ID", "Source", "File_Path", keyword)
+col_name <- c("ID", "Region", "File_Path", keyword)
 frequency_database <- presence_database <- proportion_database <- 
   data.frame(matrix(NA, ncol = length(col_name))) 
 colnames(frequency_database) <- colnames(presence_database) <- colnames(proportion_database) <- 
@@ -234,40 +234,48 @@ proportion_database<-read.csv(file=here::here("TextAnalysis", "top10_proportion.
 colnames(presence_database) <- col_name
 data_reshape <- reshape2::melt(
   presence_database[, c(2, 4:ncol(presence_database))],
-  id = c("Source")
+  id = c("Region")
 )
-colnames(data_reshape) <- c("Source", "keyword", "value")
+colnames(data_reshape) <- c("Region", "keyword", "value")
 
 data_merge <- merge(data_reshape, keyword_map, by= "keyword")
 
-sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Source, data = data_merge, sum)
+sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Region, data = data_merge, sum)
 sum_by_group <- sum_by_group[order(sum_by_group$keyword_id),]
 group <- unique(sum_by_group$group)
-
-jpeg(filename = here::here("TextAnalysis", "top10_barplot_sum.jpg"), width=200, height=150, units="mm", res=1200)
-ggplot(sum_by_group, aes(fill=Source, y=value, x=keyword_id)) + 
+sum_by_group$group <- factor(sum_by_group$group, levels = group)
+# jpeg(filename = here::here("TextAnalysis", "top10_barplot_sum.jpg"), width=200, height=150, units="mm", res=1200)
+ggplot(sum_by_group, aes(fill=Region, y=value, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
-  facet_wrap(~group, scales = "free_x") +
+  facet_wrap(~group, scales = "free_x", ncol = 2) +
   labs(
     x = "Term ID",
     y = "Frequency"
   ) +
   scale_fill_viridis(discrete = TRUE) +
-  theme_bw()
-dev.off()
+  theme(
+    panel.background = NULL,
+    panel.grid.major.x = element_blank(), 
+    panel.grid.major.y = element_blank()) 
+ggsave(here::here("TextAnalysis", "top10_barplot_sum.jpg"))
+# dev.off()
 
-mean_by_group <- aggregate(value ~ keyword+keyword_id+group+Source, data = data_merge, mean)
+mean_by_group <- aggregate(value ~ keyword+keyword_id+group+Region, data = data_merge, mean)
 mean_by_group <- mean_by_group[order(mean_by_group$keyword_id),]
 group <- unique(mean_by_group$group)
-
-jpeg(filename = here::here("TextAnalysis", "top10_barplot_mean.jpg"), width=200, height=150, units="mm", res=1200)
-ggplot(mean_by_group, aes(fill=Source, y=value*100, x=keyword_id)) + 
+mean_by_group$group <- factor(sum_by_group$group, levels = group)
+# jpeg(filename = here::here("TextAnalysis", "top10_barplot_mean.jpg"), width=200, height=150, units="mm", res=1200)
+ggplot(mean_by_group, aes(fill=Region, y=value*100, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
-  facet_wrap(~group, scales = "free_x") +
+  facet_wrap(~group, scales = "free_x", ncol = 2) +
   labs(
     x = "Term ID",
     y = "Presence (%)"
   ) +
   scale_fill_viridis(discrete = TRUE) +
+  geom_vline(xintercept = c(0:5)+0.5) +
+  scale_y_continuous(expand=expand_scale(mult=c(0.0,0.0)))+
+  scale_x_discrete(expand=expand_scale(mult=c(0.0,0.0))) +
   theme_bw()
-dev.off()
+ggsave(here::here("TextAnalysis", "top10_barplot_mean.jpg"))
+# dev.off()
