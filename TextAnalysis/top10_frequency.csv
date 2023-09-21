@@ -1,8 +1,8 @@
-"ID","Region","File_Path","catch","total mortality","harvest","total removals","catch per unit effort|cpue","catch rate","index of abundance","catch per effort|fishing success","landings","retained catch","natural log of unfished recruitment|lnr0","logr0","log(r0)","r0","projection","forecast","prediction","sex","gender","spawning biomass|sb","spawning stock biomass|ssb","spawning output","spawning stock output|sso|spawners|effective spawning output","mass","weight"
+"ID","Region","File_Path","catch","total mortality","harvest","total removals","catch per unit effort|cpue","catch rate","index of abundance","catch per effort|fishing success","landings","retained catch","natural log of unfished recruitment|lnr0","logr0","log(r0)","r0","projection","forecast","prediction","sex","gender","spawning biomass|sb","spawning stock biomass|ssb","spawning output","spawning stock output|sso|mature biomass|spawners|effective spawning output","mass","weight"
 "1","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/blue-warehou-rebuilding-strategy-2022.pdf",83,0,14,0,14,0,12,0,2,0,0,0,0,0,0,0,0,2,0,6,0,0,4,0,2
 "2","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/frr276.pdf",435,18,1,0,1,6,6,0,0,0,0,0,0,0,0,0,0,38,0,4,7,0,18,0,12
-"3","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/frr294.pdf",337,1,53,0,39,28,7,0,12,2,0,0,0,2,15,0,0,26,0,5,0,0,8,0,12
-"4","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Gummy-assessment-report-Dec2020.pdf",34,0,2,0,122,0,4,0,5,0,0,0,0,0,0,0,0,11,0,2,0,0,3,0,10
+"3","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/frr294.pdf",337,1,53,0,39,28,7,0,12,2,0,0,0,2,15,0,0,26,0,5,0,0,21,0,12
+"4","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Gummy-assessment-report-Dec2020.pdf",34,0,2,0,122,0,4,0,5,0,0,0,0,0,0,0,0,11,0,2,0,0,10,0,10
 "5","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/King threadfin stock assessment 2020.pdf",148,0,138,0,7,59,0,0,5,1,6,0,0,11,1,1,0,5,0,40,0,14,15,0,18
 "6","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Marine_Scalefish_Fishery_Assessment_Report_2020_-_FINAL_20200424.pdf",861,0,30,0,216,46,0,0,2,0,0,0,0,0,0,0,0,4,0,8,0,0,38,0,11
 "7","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/puntae_x2006a.pdf",82,0,0,0,12,2,3,0,3,1,0,0,0,1,1,0,1,2,0,72,10,0,9,9,7
@@ -13,16 +13,16 @@
 "12","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Stock assessment of the Queensland ballots saucer scallop_2022ed..pdf",160,0,73,0,11,46,2,0,1,0,0,0,0,7,1,0,0,0,0,35,1,0,10,0,13
 "13","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Stock assessments for SESSF- 2019 - Part 2.pdf",1044,0,36,9,1103,117,1,0,4,0,0,0,0,0,1,0,0,0,0,6,0,0,14,1,0
 "14","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Stock Assessments for SESSF 2020–21 - Part 1.pdf",522,2,93,8,281,53,2,0,34,14,10,0,0,9,8,8,0,13,1,283,124,0,30,21,34
-"15","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/01_WGNSSK_Report_2019.pdf",1319,21,169,8,114,12,2,0,1512,0,0,0,0,0,8,401,64,47,0,590,575,0,99,7,241
+"15","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/01_WGNSSK_Report_2019.pdf",1319,21,169,8,114,12,2,0,1512,0,0,0,0,0,8,401,64,47,0,590,575,0,117,7,241
 "16","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/ices2023_WKBCOD_report_2023.pdf",334,1,15,0,5,2,0,0,396,0,0,0,0,0,1,49,3,0,0,165,162,0,37,3,47
 "17","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/WKBALTCOD2_2019.pdf",274,0,71,0,50,0,0,0,85,0,1,0,0,6,1,23,7,16,0,67,83,0,51,4,82
 "18","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/WKBBALTPEL_2023_final_report.pdf",295,9,6,0,7,0,1,0,126,0,1,0,0,6,7,18,19,12,1,176,178,0,52,0,82
 "19","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/wkdem_2020.pdf",173,1,3,0,2,0,0,0,80,0,0,0,0,0,0,3,18,0,0,60,54,0,20,1,18
 "20","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/WKFlatNSCS_2020.pdf",423,0,1,0,8,2,36,0,3357,0,0,0,0,0,0,18,23,99,0,131,131,0,61,1,220
-"21","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/WKMSYSPiCT_2021.pdf",328,1,14,0,244,0,0,0,254,0,0,0,0,0,0,55,17,8,0,7,3,0,19,2,31
+"21","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/WKMSYSPiCT_2021.pdf",328,1,14,0,244,0,0,0,254,0,0,0,0,0,0,55,17,8,0,7,3,0,20,2,31
 "22","ICES","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/ICES/WKSPRAT_2018_Report.pdf",53,1,6,0,5,0,2,0,5,0,0,0,0,0,0,16,2,0,0,17,18,0,9,0,13
 "23","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIatf.pdf",31,0,4,0,1,0,0,0,0,0,0,0,0,0,9,0,0,0,0,2,0,0,3,0,0
-"24","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIatka.pdf",151,2,32,2,42,0,0,0,6,2,0,0,0,2,5,0,1,4,0,66,3,0,25,1,37
+"24","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIatka.pdf",151,2,32,2,42,0,0,0,6,2,0,0,0,2,5,0,1,4,0,66,3,0,26,1,37
 "25","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIocto.pdf",84,1,10,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,11,0,8
 "26","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIoflat (8).pdf",31,0,7,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0
 "27","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIorock (5).pdf",71,0,6,0,3,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,9,0,0
@@ -31,12 +31,12 @@
 "30","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIrougheye (2).pdf",101,2,33,1,18,0,0,0,0,0,0,0,0,1,1,0,1,0,0,26,20,0,8,0,19
 "31","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/BSAIskate.pdf",18,0,8,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,1,0,0,0,0,0
 "32","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/EBSpcod.pdf",183,2,74,2,217,6,5,0,9,11,0,0,0,0,12,0,2,0,0,197,8,1,126,1,104
-"33","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/EBSPollock.pdf",186,1,31,1,23,0,0,0,1,10,4,0,0,1,9,0,2,11,0,80,8,1,21,21,32
+"33","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/EBSPollock.pdf",186,1,31,1,23,0,0,0,1,10,4,0,0,1,9,0,2,11,0,80,8,1,22,21,32
 "34","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/GOAdeepflat.pdf",42,0,16,0,4,0,0,0,0,0,2,0,0,1,3,0,0,6,0,26,12,0,12,0,3
 "35","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/GOAskate (9).pdf",43,1,23,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0
 "36","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/PIRKC.pdf",27,0,6,0,1,0,0,0,1,5,0,1,1,0,0,0,0,20,0,2,2,0,3,1,7
 "37","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/sablefish.pdf",269,1,53,4,112,11,2,2,16,2,0,0,0,0,23,0,1,13,0,183,98,0,83,0,57
-"38","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/SAFE_snow.pdf",76,1,14,0,2,0,1,0,0,30,0,0,0,0,0,0,0,30,0,2,0,0,11,2,13
+"38","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/SAFE_snow.pdf",76,1,14,0,2,0,1,0,0,30,0,0,0,0,0,0,0,30,0,2,0,0,30,2,13
 "39","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/2020_FLD_GMGB_RPT.pdf",13,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0
 "40","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/2020_FLW_GM_RPT_Update_report_08_26_095440 (1).pdf",13,0,0,2,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0
 "41","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/2020_Herring_Unit_Report.pdf",10,0,2,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,5,8,0,0,0,0
@@ -54,7 +54,7 @@
 "53","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/noaa_24818_DS1.pdf",78,2,0,0,0,0,0,0,39,0,0,0,0,0,0,0,3,0,0,1,10,0,6,0,8
 "54","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/TSR_EGB_Haddock_2021_meeting_draft.pdf",40,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,5
 "55","NOAA-NWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NWFSC/2011Dick3.pdf",256,2,25,0,28,0,1,0,130,1,4,4,4,14,0,29,1,7,18,16,4,76,44,0,20
-"56","NOAA-NWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NWFSC/agenda-item-h-5-attachment-9-2.pdf",175,20,30,3,10,2,9,0,98,1,11,6,6,15,2,3,0,12,1,36,6,137,34,1,45
+"56","NOAA-NWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NWFSC/agenda-item-h-5-attachment-9-2.pdf",175,20,30,3,10,2,9,0,98,1,11,6,6,15,2,3,0,12,1,36,6,137,41,1,45
 "57","NOAA-NWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NWFSC/Blue-Deacon_Assessment_2017_Final.pdf",446,10,96,9,123,21,18,0,241,12,45,0,0,18,13,11,8,21,31,24,17,165,122,0,18
 "58","NOAA-NWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NWFSC/c-6-attachment-1-full-assessment-electronic-only-status-of-lingcod-ophiodon-elongatus-along-the-northern-u-s-west-coast-in-2021.pdf",157,9,7,0,43,1,9,0,146,6,1,4,4,1,3,4,0,25,15,50,20,3,35,0,28
 "59","NOAA-NWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NWFSC/Cabezon-2019_FINAL.pdf",306,9,78,9,58,10,17,1,108,0,44,0,0,15,14,9,4,8,24,154,7,108,70,1,38
@@ -89,17 +89,17 @@
 "88","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S23_SAR_complete_and_final.pdf",112,11,77,1,11,1,3,0,205,0,0,0,0,0,43,0,2,14,0,107,118,0,24,0,38
 "89","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S28UpdateSAR_V2.pdf",24,0,18,1,26,0,0,0,98,1,6,0,0,5,6,2,0,4,0,55,75,2,26,0,21
 "90","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S34_ATSH_SAR.pdf",175,3,23,1,51,3,1,0,38,0,0,0,0,27,109,0,2,6,0,3,2,0,28,0,54
-"91","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S51_FINAL_SAR_0.pdf",102,4,11,0,44,4,9,1,309,0,4,0,0,14,25,3,1,10,10,54,77,3,65,0,65
+"91","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S51_FINAL_SAR_0.pdf",102,4,11,0,44,4,9,1,309,0,4,0,0,14,25,3,1,10,10,54,77,3,66,0,65
 "92","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S52_Final_SAR_v2.pdf",71,3,25,1,78,1,1,0,84,24,2,0,0,0,17,7,1,0,2,79,90,13,48,0,17
 "93","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S57_Final_SAR.pdf",55,1,29,1,23,0,4,0,193,0,0,10,10,45,8,0,1,11,0,24,13,31,62,0,25
 "94","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S64_SAR_FINAL.pdf",120,5,36,0,81,3,7,0,320,18,24,0,0,2,17,2,4,34,2,69,125,0,61,1,78
 "95","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S67_Final_SAR.pdf",105,1,32,1,89,4,1,0,144,0,5,0,0,5,16,18,1,8,2,108,131,6,30,0,29
 "96","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/S72_SAR_FINAL.pdf",53,2,34,0,64,2,1,0,169,9,10,0,0,5,13,1,1,15,0,218,227,1,103,0,98
-"97","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SA BSB 2018.pdf",29,2,18,0,9,0,13,2,145,0,0,1,1,6,37,0,2,3,0,76,50,0,10,0,65
-"98","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SEDAR_60_SA_Red_Porgy_SAR_4.9.2020.pdf",33,3,33,2,6,1,10,1,193,0,0,2,2,15,42,0,3,6,0,106,101,0,23,0,55
+"97","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SA BSB 2018.pdf",29,2,18,0,9,0,13,2,145,0,0,1,1,6,37,0,2,3,0,76,50,0,11,0,65
+"98","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SEDAR_60_SA_Red_Porgy_SAR_4.9.2020.pdf",33,3,33,2,6,1,10,1,193,0,0,2,2,15,42,0,3,6,0,106,101,0,25,0,55
 "99","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SEDAR65_FullSAR_12.8.2020_V3.pdf",302,3,30,0,79,0,11,0,125,0,12,0,0,9,166,35,3,49,0,13,2,0,45,1,84
-"100","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SMA_ASS_ENG.pdf",136,0,9,0,69,0,1,0,11,0,0,0,0,4,1,1,3,5,0,6,3,1,8,0,12
+"100","NOAA-SEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SEFSC/SMA_ASS_ENG.pdf",136,0,9,0,69,0,1,0,11,0,0,0,0,4,1,1,3,5,0,6,3,1,9,0,12
 "101","NOAA-SWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SWFSC/agenda-item-d-3.pdf",52,0,32,0,6,0,10,0,53,0,8,0,0,0,1,27,1,14,2,44,47,0,37,0,15
 "102","NOAA-SWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SWFSC/SAC-11-07-MTG_Yellowfin tuna benchmark assessment 2019.pdf",81,0,5,0,18,3,34,0,0,10,6,0,0,4,2,0,1,4,0,46,0,0,51,1,8
 "103","NOAA-SWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SWFSC/SC14-SA-WP-11 ISC18 Shortfin Mako Stock Assessment.pdf",163,0,4,0,110,0,0,0,2,0,1,11,11,12,3,14,0,12,1,6,2,1,9,0,9
-"Sum",NA,NA,16718,236,2703,93,5221,576,417,9,10532,298,299,55,55,402,821,882,254,925,176,5130,3081,950,2633,94,2672
+"Sum",NA,NA,16718,236,2703,93,5221,576,417,9,10532,298,299,55,55,402,821,882,254,925,176,5130,3081,950,2705,94,2672

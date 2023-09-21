@@ -1,8 +1,8 @@
-"ID","Region","File_Path","catch","total mortality","harvest","total removals","catch per unit effort|cpue","catch rate","index of abundance","catch per effort|fishing success","landings","retained catch","natural log of unfished recruitment|lnr0","logr0","log(r0)","r0","projection","forecast","prediction","sex","gender","spawning biomass|sb","spawning stock biomass|ssb","spawning output","spawning stock output|sso|spawners|effective spawning output","mass","weight"
+"ID","Region","File_Path","catch","total mortality","harvest","total removals","catch per unit effort|cpue","catch rate","index of abundance","catch per effort|fishing success","landings","retained catch","natural log of unfished recruitment|lnr0","logr0","log(r0)","r0","projection","forecast","prediction","sex","gender","spawning biomass|sb","spawning stock biomass|ssb","spawning output","spawning stock output|sso|mature biomass|spawners|effective spawning output","mass","weight"
 "1","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/blue-warehou-rebuilding-strategy-2022.pdf",0.15,0,0.02,0,0.02,0,0.02,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0,0,0.01,0,0
 "2","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/frr276.pdf",0.2,0.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.02,0,0,0,0,0.01,0,0.01
-"3","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/frr294.pdf",0.13,0,0.02,0,0.01,0.01,0,0,0,0,0,0,0,0,0.01,0,0,0.01,0,0,0,0,0,0,0
-"4","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Gummy-assessment-report-Dec2020.pdf",0.03,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0,0,0,0,0,0,0.01
+"3","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/frr294.pdf",0.13,0,0.02,0,0.01,0.01,0,0,0,0,0,0,0,0,0.01,0,0,0.01,0,0,0,0,0.01,0,0
+"4","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Gummy-assessment-report-Dec2020.pdf",0.03,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0,0,0,0,0.01,0,0.01
 "5","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/King threadfin stock assessment 2020.pdf",0.09,0,0.09,0,0,0.04,0,0,0,0,0,0,0,0.01,0,0,0,0,0,0.03,0,0.01,0.01,0,0.01
 "6","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/Marine_Scalefish_Fishery_Assessment_Report_2020_-_FINAL_20200424.pdf",0.23,0,0.01,0,0.06,0.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.01,0,0
 "7","Australia","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/Australia/puntae_x2006a.pdf",0.08,0,0,0,0.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.07,0.01,0,0.01,0.01,0.01
@@ -36,7 +36,7 @@
 "35","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/GOAskate (9).pdf",0.05,0,0.03,0,0.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 "36","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/PIRKC.pdf",0.04,0,0.01,0,0,0,0,0,0,0.01,0,0,0,0,0,0,0,0.03,0,0,0,0,0,0,0.01
 "37","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/sablefish.pdf",0.05,0,0.01,0,0.02,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.03,0.02,0,0.02,0,0.01
-"38","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/SAFE_snow.pdf",0.06,0,0.01,0,0,0,0,0,0,0.03,0,0,0,0,0,0,0,0.03,0,0,0,0,0.01,0,0.01
+"38","NOAA-AFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-AFSC/SAFE_snow.pdf",0.06,0,0.01,0,0,0,0,0,0,0.03,0,0,0,0,0,0,0,0.03,0,0,0,0,0.03,0,0.01
 "39","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/2020_FLD_GMGB_RPT.pdf",0.13,0,0,0,0,0,0,0,0.03,0,0,0,0,0,0,0,0,0,0,0.02,0.02,0,0,0,0
 "40","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/2020_FLW_GM_RPT_Update_report_08_26_095440 (1).pdf",0.13,0,0,0.02,0,0,0,0,0.05,0,0,0,0,0,0,0,0,0,0,0.02,0.02,0,0,0,0
 "41","NOAA-NEFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-NEFSC/2020_Herring_Unit_Report.pdf",0.09,0,0.02,0,0,0,0,0,0,0,0,0,0,0,0.06,0,0,0,0,0.05,0.08,0,0,0,0
@@ -102,4 +102,4 @@
 "101","NOAA-SWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SWFSC/agenda-item-d-3.pdf",0.02,0,0.01,0,0,0,0,0,0.02,0,0,0,0,0,0,0.01,0,0.01,0,0.02,0.02,0,0.02,0,0.01
 "102","NOAA-SWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SWFSC/SAC-11-07-MTG_Yellowfin tuna benchmark assessment 2019.pdf",0.05,0,0,0,0.01,0,0.02,0,0,0.01,0,0,0,0,0,0,0,0,0,0.03,0,0,0.03,0,0.01
 "103","NOAA-SWFSC","C:/Users/bai.li/Documents/GitHub/fishdictionary/StockAssessment/NOAA-SWFSC/SC14-SA-WP-11 ISC18 Shortfin Mako Stock Assessment.pdf",0.1,0,0,0,0.07,0,0,0,0,0,0,0.01,0.01,0.01,0,0.01,0,0.01,0,0,0,0,0.01,0,0.01
-"Sum",NA,NA,8.31,0.03,1.23,0.03,1.65,0.21,0.18,0,2.69,0.12,0.05,0.01,0.01,0.1,0.47,0.11,0.03,0.26,0.03,2.31,1.79,0.29,0.95,0.02,0.99
+"Sum",NA,NA,8.31,0.03,1.23,0.03,1.65,0.21,0.18,0,2.69,0.12,0.05,0.01,0.01,0.1,0.47,0.11,0.03,0.26,0.03,2.31,1.79,0.29,0.99,0.02,0.99

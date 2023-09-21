@@ -23,7 +23,7 @@ spawning_biomass <- data.frame(
     "spawning biomass|sb",
     "spawning stock biomass|ssb", 
     "spawning output",
-    "spawning stock output|sso|spawners|effective spawning output"
+    "spawning stock output|sso|mature biomass|spawners|effective spawning output"
   ),
   group = "spawning biomass"
 )
