@@ -14,7 +14,7 @@ case for finite rates. For example an F of 0.5 would correspond to 40\% of
 the population being removed or a finite rate of 0.4. Furthermore, F can
 sometimes pertain to just a range of the age structure and may or may not
 account for selectivity.}
-\item{Alternatives}{harvest rate, exploitation rate, finite fishing mortality,
+\item{Synonym or Similar Terms}{harvest rate, exploitation rate, finite fishing mortality,
 apical F}
 \item{Range of possible values}{0--Inf}
 \item{Units}{\code{time^{-1}}}
@@ -29,7 +29,7 @@ InstantaneousFishingMortalityRate
 \description{
 Instantaneous annual exponential rate at which fish are
 being removed from the population due to fishing. Many other platforms
-distinguish between different F. For example, looking at ASAP, we have
+distinguish between different F. For example, looking at Age Structure Assessment Program (ASAP), we have
 Average F (across a certain age range), Total F (by age), N-weighted,
 B-weighted. ICES calls Average F Fbar. I think these both (SAM definitely
 does) incorporate selectivity. Apical F - at the peak of selectivity curve?

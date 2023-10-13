@@ -13,7 +13,7 @@
 #' \item{Rationale}{Standardizing notation for instantaneous rates of
 #' mortality is easy because Z appears to be one of the most well-adopted
 #' acronyms across a great number of disciplines.}
-#' \item{Alternatives}{}
+#' \item{Synonym or Similar Terms}{}
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{ \code{time^{-1}}}
 #' }

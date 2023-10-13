@@ -13,7 +13,7 @@
 #' as such rather than recruitment to the stock. Age-0 fish are typically
 #' referred to as recruits but documentation should state the age at which
 #' fish are recruited because there is no standard.}
-#' \item{Alternatives}{age-0 fish}
+#' \item{Synonym or Similar Terms}{age-0 fish}
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{numbers}
 #' }

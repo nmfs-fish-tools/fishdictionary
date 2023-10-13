@@ -12,7 +12,7 @@ of MSY despite difficulty in its estimation. Metrics such as fishing rate
 at MSY should be abbreviated using all upper case letters but this is not
 common practice as of yet. For example, sometimes you will see \code{F_msy} or
 some derivative thereof.}
-\item{Alternatives}{msy, MSYproxy}
+\item{Synonym or Similar Terms}{msy, MSYproxy}
 \item{Range of possible values}{0--Inf}
 \item{Units}{mt, numbers}
 }

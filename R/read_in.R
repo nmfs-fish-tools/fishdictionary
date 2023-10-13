@@ -11,7 +11,7 @@ read_in <- function(filename = "inst/extdata/top20.txt") {
   names(namedef_df) <- c("name", "description")
   string_names <- c(
     "Examples", "ICES code type", "Units",
-    "Rationale", "Alternatives", "Range of possible values"
+    "Rationale", "Synonym or Similar Terms", "Range of possible values"
   )
   for (i in seq_len(length(string_names))) {
     ind <- grep(input_data,

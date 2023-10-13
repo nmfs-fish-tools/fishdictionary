@@ -32,7 +32,7 @@ validate_Rd <- function(Rd_file) {
 
   # Extract format section for validating examples, rationale, alternatives, range of possible values, and units
   format <- Rd[[which(tags == "\\format")]][[2]]
-  items <- c("Examples", "Rationale", "Alternatives", "Range of possible values", "Units")
+  items <- c("Examples", "Rationale", "Synonym or Similar Terms", "Range of possible values", "Units")
   missing_items <- items[!is.element(items, unlist(format))]
   if (any(!is.element(items, unlist(format)))) stop(paste("Missing", paste(missing_items, collapse = ", ")))
   
@@ -49,9 +49,9 @@ validate_Rd <- function(Rd_file) {
   }
 
   # Validate alternatives
-  if (format[[6]][[1]][[1]][1] == "Alternatives" &
+  if (format[[6]][[1]][[1]][1] == "Synonym or Similar Terms" &
     length(format[[6]][[2]]) == 0) {
-    stop("Alternatives are not provided. Use NA if there is no input for alternatives.")
+    stop("Synonym or similar terms are not provided. Use NA if there is no input for synonym or similar terms.")
   }
 
   # Validate range of possible values

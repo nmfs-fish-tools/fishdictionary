@@ -18,7 +18,7 @@
 #' in time when equilibrium conditions are thought to exist because fishing at an
 #' industrial-wide scale had yet to alter the stock should be referred to as unfished
 #' rather than equilibrium.}
-#' \item{Alternatives}{virgin, initial, equilibrium, unfished equilibrium}
+#' \item{Synonym or Similar Terms}{virgin, initial, equilibrium, unfished equilibrium}
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{}
 #' }

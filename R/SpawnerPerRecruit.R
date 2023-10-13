@@ -14,7 +14,7 @@
 #' \item{Examples}{SPR30% }
 #' \item{Rationale}{Spawner per recruit and spawning potential ratio have the
 #' same acronym of SPR.}
-#' \item{Alternatives}{30%SPR}
+#' \item{Synonym or Similar Terms}{30%SPR}
 #' \item{Range of possible values}{0--1}
 #' \item{Units}{}
 #' }

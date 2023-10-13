@@ -7,7 +7,7 @@
 \describe{
 \item{Examples}{}
 \item{Rationale}{}
-\item{Alternatives}{}
+\item{Synonym or Similar Terms}{}
 \item{Range of possible values}{0--Inf}
 \item{Units}{numbers of fish}
 }

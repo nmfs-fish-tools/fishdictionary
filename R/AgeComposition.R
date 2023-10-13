@@ -13,7 +13,7 @@
 #' instead based on the number of tows, and thus, it is important to store the
 #' data as frequencies rather than compositions such that information is not
 #' lost.}
-#' \item{Alternatives}{age frequency, age observation}
+#' \item{Synonym or Similar Terms}{age frequency, age observation}
 #' \item{Range of possible values}{0--1}
 #' \item{Units}{}
 #' }

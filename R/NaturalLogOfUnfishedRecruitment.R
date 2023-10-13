@@ -12,7 +12,7 @@
 #' is in 1000’s of recruits or fish. Both ln and log are used even though the
 #' transformation is for sure not a base-10 transformation and is rather a
 #' transformation on the natural-log scale.}
-#' \item{Alternatives}{logR0, \code{logR_0}, log(R0), R0}
+#' \item{Synonym or Similar Terms}{logR0, \code{logR_0}, log(R0), R0}
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{ln(numbers x 1000)}
 #' }

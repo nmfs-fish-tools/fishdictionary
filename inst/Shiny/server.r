@@ -1,7 +1,7 @@
 # Define server logic required to draw a histogram ----
 server <- function(input, output, session) {
   require(jsonlite)
-  library(fishdictionary)
+  #library(fishdictionary)
   require(ggplot2)
   require(shiny)
 

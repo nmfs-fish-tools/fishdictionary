@@ -10,7 +10,7 @@
 \item{Rationale}{Landings and catch are sometimes thought to be
 interchangeable but they are not given that catch can also include
 bycatch or unwanted catch.}
-\item{Alternatives}{total mortality}
+\item{Synonym or Similar Terms}{total mortality, harvest, total removals}
 \item{Range of possible values}{0--Inf}
 \item{Units}{mt, numbers}
 }

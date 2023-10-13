@@ -1,11 +1,11 @@
 #' Function to add an object to the JSON
 #'
 #' @param input_list A list of fields corresponding to entries. Must include
-#'  \code{name,description,Examples, Units, Rationale, Alternatives, Range of possible values}
+#'  \code{name,description,Examples, Units, Rationale, Synonym or Similar Terms, Range of possible values}
 #' @return An R list in the JSON format which includes the new term.
 #' @export
 add_object <- function(input_list) {
-  json_obj <- jsonlite::fromJSON(system.file("extdata","top20.json", package = "stockassessmentdictionary"))
+  json_obj <- jsonlite::fromJSON(system.file("extdata","top20.json", package = "fishdictionary"))
   # Return an error if the object already exists
   if (input_list$name %in% sapply(json_obj, get, x = "name")) stop(input_list$name, " already exists.")
   # Validate the json input and return an error if it fails 

@@ -1,6 +1,6 @@
 #' Spawning Biomass (SB)
 #'
-#' 1. The total weight of all fish (both males and females)
+#' 1. The total mass of all fish (both males and females)
 #' in the population that contribute to reproduction. Often
 #' conventionally defined as the biomass of all individuals
 #' beyond “age at first maturity” or “size at first maturity,”
@@ -24,14 +24,14 @@
 #' spawning biomass. The alternative, spawning output, is only viable
 #' for species that exhibit multiple spawning events per fish within a
 #' time period and have pelagic eggs.}
-#' \item{Alternatives}{spawning stock biomass, spawning output (eggs),
+#' \item{Synonym or Similar Terms}{spawning stock biomass, spawning output (eggs),
 #' spawning stock output (eggs)}
 #' \item{Range of possible values}{0--Inf}
 #' \item{Units}{mt}
 #' }
 #' @export
 SpawningBiomass <- function(){
-    w <- Weight()
+    w <- Mass()
     naa <- NumbersAtAge()
     return(w*naa)
 }

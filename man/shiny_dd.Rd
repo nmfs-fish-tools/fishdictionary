@@ -2,7 +2,7 @@
 % Please edit documentation in R/shiny_dd.r
 \name{shiny_dd}
 \alias{shiny_dd}
-\title{Run the data dictionary app}
+\title{Run the fish dictionary app}
 \usage{
 shiny_dd(browse = TRUE)
 }
@@ -10,7 +10,7 @@ shiny_dd(browse = TRUE)
 \item{browse}{Logical. Use browser for running Shiny app.}
 }
 \description{
-Run the data dictionary app
+Run the fish dictionary app
 }
 \examples{
 \dontrun{

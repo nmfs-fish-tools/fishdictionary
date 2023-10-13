@@ -1,6 +1,6 @@
-#' Run the data dictionary app
+#' Run the fish dictionary app
 #'
-#' Run the data dictionary app
+#' Run the fish dictionary app
 #' @export
 #' @param browse Logical. Use browser for running Shiny app.
 #' @examples
@@ -10,7 +10,7 @@
 #' }
 #' }
 shiny_dd <- function(browse = TRUE) {
-  shiny::runApp(system.file("Shiny", package = "stockassessmentdictionary"),
+  shiny::runApp(system.file("Shiny", package = "fishdictionary"),
     launch.browser = browse
   )
 }

@@ -20,7 +20,7 @@ for an acoustic survey that does not kill the population but rather creates
 a metric of its abundance potentially over the entire area in which it is
 thought to inhabit. Where, an absolute index of abundance would be assumed
 to have a catchability of one.}
-\item{Alternatives}{catch rate, index of abundance, standardized fishery
+\item{Synonym or Similar Terms}{catch rate, index of abundance, standardized fishery
 catch time series, catch per effort, fishing success, availability.}
 \item{Range of possible values}{0--Inf}
 \item{Units}{}

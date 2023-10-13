@@ -8,7 +8,7 @@ add_object(input_list)
 }
 \arguments{
 \item{input_list}{A list of fields corresponding to entries. Must include
-\code{name,description,Examples, Units, Rationale, Alternatives, Range of possible values}}
+\code{name,description,Examples, Units, Rationale, Synonym or Similar Terms, Range of possible values}}
 }
 \value{
 An R list in the JSON format which includes the new term.
