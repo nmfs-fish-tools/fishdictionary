@@ -18,6 +18,6 @@
 #' \item{Units}{kg}
 #' }
 #' @export
-Weight <- function(){
+Mass <- function(){
     return(0)
 }
