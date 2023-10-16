@@ -22,7 +22,7 @@ test_that("validate_Rd validators work as expected", {
   
   Rd_file <- file.path(validate_Rd_path, "validate_Rd_no_alternatives.Rd")
   expect_error(validate_Rd(Rd_file), 
-               regexp = "Alternatives are not provided. Use NA if there is no input for alternatives.")
+               regexp = "Synonym or similar terms are not provided. Use NA if there is no input for synonym or similar terms.")
   
   Rd_file <- file.path(validate_Rd_path, "validate_Rd_no_range_of_possible_values.Rd")
   expect_error(validate_Rd(Rd_file),

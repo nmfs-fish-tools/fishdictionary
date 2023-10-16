@@ -8,7 +8,7 @@
 \describe{
 \item{Examples}{spawning biomass, age three-plus biomass, exploitable
 biomass, January 1 biomass}
-\item{Alternatives}{stock biomass, total biomass, abundance (numbers of fish),
+\item{Synonym or Similar Terms}{stock biomass, total biomass, abundance (numbers of fish),
 biomass wet weight, biomass index}
 \item{Range of possible values}{0--Inf}
 }
