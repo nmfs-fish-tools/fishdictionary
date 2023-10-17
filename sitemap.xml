@@ -46,6 +46,9 @@
     <loc>/reference/LengthComposition.html</loc>
   </url>
   <url>
+    <loc>/reference/Mass.html</loc>
+  </url>
+  <url>
     <loc>/reference/MaximumSustainableYield.html</loc>
   </url>
   <url>
@@ -74,9 +77,6 @@
   </url>
   <url>
     <loc>/reference/Unfished.html</loc>
-  </url>
-  <url>
-    <loc>/reference/Weight.html</loc>
   </url>
   <url>
     <loc>/reference/add_object.html</loc>
