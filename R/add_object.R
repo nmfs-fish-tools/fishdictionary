@@ -3,6 +3,8 @@
 #' @param input_list A list of fields corresponding to entries. Must include
 #'  \code{name,description,Examples, Units, Rationale, Alternatives, Range of possible values}
 #' @return An R list in the JSON format which includes the new term.
+#' @importFrom jsonlite fromJSON toJSON
+#' @importFrom jsonvalidate json_validate
 #' @export
 add_object <- function(input_list) {
   json_obj <- jsonlite::fromJSON(system.file("extdata","top20.json", package = "stockassessmentdictionary"))
