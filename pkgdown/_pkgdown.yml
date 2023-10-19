@@ -33,6 +33,7 @@ reference:
   - read_in
   - shiny_dd
   - validate_Rd
+  - make_hex
   
 
 navbar:
