@@ -223,9 +223,9 @@ for (org in seq_along(subfolder_info)){
   )
   proportion_database[nrow(proportion_database), "ID"] <- "Sum"
   
-  write.csv(frequency_database, file=here::here("TextAnalysis", paste0("top20_frequency_", names(subfolder_info)[org], ".csv")), row.names=FALSE)
-  write.csv(presence_database, file=here::here("TextAnalysis", paste0("top20_presence_", names(subfolder_info)[org], ".csv")), row.names=FALSE)
-  write.csv(proportion_database, file=here::here("TextAnalysis", paste0("top20_proportion_", names(subfolder_info)[org], ".csv")), row.names=FALSE)
+  write.csv(frequency_database, file=here::here("inst", "TextAnalysis", paste0("top20_frequency_", names(subfolder_info)[org], ".csv")), row.names=FALSE)
+  write.csv(presence_database, file=here::here("inst", "TextAnalysis", paste0("top20_presence_", names(subfolder_info)[org], ".csv")), row.names=FALSE)
+  write.csv(proportion_database, file=here::here("inst", "TextAnalysis", paste0("top20_proportion_", names(subfolder_info)[org], ".csv")), row.names=FALSE)
   # Upload xlsx to Google Drive
   if (authorize_GoogleDrive) {
     # Google Drive folder id
@@ -234,9 +234,9 @@ for (org in seq_along(subfolder_info)){
   }
   
   # Plot results ------------------------------------------------------------
-  frequency_database <- read.csv(file=here::here("TextAnalysis", paste0("top20_frequency_", names(subfolder_info)[org], ".csv")))
-  presence_database<-read.csv(file=here::here("TextAnalysis", paste0("top20_presence_", names(subfolder_info)[org], ".csv")))
-  proportion_database<-read.csv(file=here::here("TextAnalysis", paste0("top20_proportion_", names(subfolder_info)[org], ".csv")))
+  frequency_database <- read.csv(file=here::here("inst", "TextAnalysis", paste0("top20_frequency_", names(subfolder_info)[org], ".csv")))
+  presence_database<-read.csv(file=here::here("inst", "TextAnalysis", paste0("top20_presence_", names(subfolder_info)[org], ".csv")))
+  proportion_database<-read.csv(file=here::here("inst", "TextAnalysis", paste0("top20_proportion_", names(subfolder_info)[org], ".csv")))
   
   word_frequency <- as.matrix(frequency_database[frequency_database$ID == "Sum", 4:ncol(frequency_database)])
   word_presence <- as.matrix(presence_database[presence_database$ID == "Sum", 4:ncol(presence_database)])
@@ -266,7 +266,7 @@ for (org in seq_along(subfolder_info)){
   )
   
   # barplot
-  jpeg(filename = here::here("TextAnalysis", paste0("top20_barplot_", names(subfolder_info)[org], ".jpg")), width = 200, height = 120, units = "mm", res = 1200)
+  jpeg(filename = here::here("inst", "TextAnalysis", paste0("top20_barplot_", names(subfolder_info)[org], ".jpg")), width = 200, height = 120, units = "mm", res = 1200)
   par(mar = c(6, 4, 1, 1), mfrow = c(3, 1))
   frequency_barplot <- barplot(height = word_frequency, xaxt = "n", ylab = "Frequency")
   text(frequency_barplot - 0.25, par("usr")[3] - 0.25, xlabels, xpd = TRUE, srt = 40, adj = 1, cex = 0.8)
@@ -280,14 +280,14 @@ for (org in seq_along(subfolder_info)){
   
   dev.off()
   
-  jpeg(filename = here::here("TextAnalysis", paste0("top20_presence_", names(subfolder_info)[org], ".jpg")), width = 200, height = 120, units = "mm", res = 1200)
+  jpeg(filename = here::here("inst", "TextAnalysis", paste0("top20_presence_", names(subfolder_info)[org], ".jpg")), width = 200, height = 120, units = "mm", res = 1200)
   par(mar = c(6, 4, 1, 1), mfrow = c(1, 1))
   presence_barplot <- barplot(height = word_presence, xaxt = "n", ylab = "Frequency") # range: 26-83, median:68
   text(presence_barplot - 0.25, par("usr")[3] - 0.25, xlabels, xpd = TRUE, srt = 40, adj = 1, cex = 0.7)
   dev.off()
   
   # wordcloud figure
-  jpeg(filename = here::here("TextAnalysis", paste0("top20_wordcloud_", names(subfolder_info)[org], ".jpg")), width = 200, height = 200, units = "mm", res = 1200)
+  jpeg(filename = here::here("inst", "TextAnalysis", paste0("top20_wordcloud_", names(subfolder_info)[org], ".jpg")), width = 200, height = 200, units = "mm", res = 1200)
   par(mar = c(1, 1, 1, 1), mfrow = c(1, 1))
   wordcloud(
     words = xlabels, freq = word_presence, rot.per = 0.35,

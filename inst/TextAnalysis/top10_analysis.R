@@ -214,9 +214,9 @@ proportion_database <- rbind(
 )
 proportion_database[nrow(proportion_database), "ID"] <- "Sum"
 
-write.csv(frequency_database, file=here::here("TextAnalysis", "top10_frequency.csv"), row.names=FALSE)
-write.csv(presence_database, file=here::here("TextAnalysis", "top10_presence.csv"), row.names=FALSE)
-write.csv(proportion_database, file=here::here("TextAnalysis", "top10_proportion.csv"), row.names=FALSE)
+write.csv(frequency_database, file=here::here("inst", "TextAnalysis", "top10_frequency.csv"), row.names=FALSE)
+write.csv(presence_database, file=here::here("inst", "TextAnalysis", "top10_presence.csv"), row.names=FALSE)
+write.csv(proportion_database, file=here::here("inst","TextAnalysis", "top10_proportion.csv"), row.names=FALSE)
 
 # Upload xlsx to Google Drive
 authorize_GoogleDrive <- FALSE
@@ -227,9 +227,9 @@ if (authorize_GoogleDrive) {
 }
 
 # Plot results ------------------------------------------------------------
-frequency_database <- read.csv(file=here::here("TextAnalysis", "top10_frequency.csv"))
-presence_database<-read.csv(file=here::here("TextAnalysis", "top10_presence.csv"))
-proportion_database<-read.csv(file=here::here("TextAnalysis", "top10_proportion.csv"))
+frequency_database <- read.csv(file=here::here("inst", "TextAnalysis", "top10_frequency.csv"))
+presence_database<-read.csv(file=here::here("inst", "TextAnalysis", "top10_presence.csv"))
+proportion_database<-read.csv(file=here::here("inst", "TextAnalysis", "top10_proportion.csv"))
 
 colnames(presence_database) <- col_name
 data_reshape <- reshape2::melt(
@@ -244,7 +244,7 @@ sum_by_group <- aggregate(value ~ keyword+keyword_id+group+Source, data = data_m
 sum_by_group <- sum_by_group[order(sum_by_group$keyword_id),]
 group <- unique(sum_by_group$group)
 
-jpeg(filename = here::here("TextAnalysis", "top10_barplot_sum.jpg"), width=200, height=150, units="mm", res=1200)
+jpeg(filename = here::here("inst", "TextAnalysis", "top10_barplot_sum.jpg"), width=200, height=150, units="mm", res=1200)
 ggplot(sum_by_group, aes(fill=Source, y=value, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~group, scales = "free_x") +
@@ -260,7 +260,7 @@ mean_by_group <- aggregate(value ~ keyword+keyword_id+group+Source, data = data_
 mean_by_group <- mean_by_group[order(mean_by_group$keyword_id),]
 group <- unique(mean_by_group$group)
 
-jpeg(filename = here::here("TextAnalysis", "top10_barplot_mean.jpg"), width=200, height=150, units="mm", res=1200)
+jpeg(filename = here::here("inst", "TextAnalysis", "top10_barplot_mean.jpg"), width=200, height=150, units="mm", res=1200)
 ggplot(mean_by_group, aes(fill=Source, y=value*100, x=keyword_id)) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~group, scales = "free_x") +

@@ -13,7 +13,7 @@ validate_Rd <- function(Rd_file) {
   if (is.null(Rd_file)) stop("Please provide the path to the R documentation (Rd) file.")
 
   Rd <- tools::parse_Rd(Rd_file)
-  tags <- tools:::RdTags(Rd)
+  tags <- lapply(Rd, attr, "Rd_tag")
 
   # Validate name
   name <- Rd[[which(tags == "\\name")]]
