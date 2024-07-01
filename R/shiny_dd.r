@@ -1,6 +1,7 @@
 #' Run the data dictionary app
 #'
 #' Run the data dictionary app
+#' @importFrom shiny runApp
 #' @export
 #' @param browse Logical. Use browser for running Shiny app.
 #' @examples
