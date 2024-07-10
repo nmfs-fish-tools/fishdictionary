@@ -1,18 +1,17 @@
 #' Spawning Biomass (SB)
 #'
-#' 1. The total weight of all fish (both males and females)
-#' in the population that contribute to reproduction. Often
-#' conventionally defined as the biomass of all individuals
-#' beyond “age at first maturity” or “size at first maturity,”
-#' i.e. beyond the age or size class in which 50 percent of
-#' the individuals are mature; 2. The total biomass of fish
-#' of reproductive age during the breeding season of a
-#' stock. Most often used as a proxy for measuring
-#' egg production, the SSB depends on the abundance of
-#' the various age classes composing the stock and their
-#' past exploitation pattern, rate of growth, fishing and
-#' natural mortality rates, onset of sexual maturity, and
-#' environmental conditions.
+#' The mass of fish (males and females or females only) in the 
+#' population that contribute to reproduction. Often conventionally 
+#' defined as the product of weight at age and the proportion 
+#' mature at age. Alternatively, it can be defined as the biomass of 
+#' all individuals at or above “age at 50 percent maturity” or “size 
+#' at 50 percent maturity” or the total biomass of fish of reproductive 
+#' age during the breeding season of a population. Spawning biomass depends on the 
+#' abundance of the various age classes composing the population and their 
+#' past exploitation pattern, rate of growth, fishing and natural mortality
+#' rates, onset of sexual maturity, and environmental conditions. Most often 
+#' used as a proxy for measuring egg production.
+#' 
 #'
 #' @format
 #' \describe{
