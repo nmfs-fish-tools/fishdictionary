@@ -3,9 +3,9 @@ Title: Collaborative tool to improve consistency in terminology and develop a fr
 Version: 0.0.0.9000
 Authors@R: c(
     person(c("Chantel", "R."), "Wetzel", , "chantel.wetzel@noaa.gov", role = "aut),
-    person(c("Christine", "C."), "Stawitz", "christine.stawitz@noaa.gov", role = c("aut", "cre")),
-    person("Bai", "Li", "bai.li@noaa.gov", role = c("aut", "cre")),
-    person(c("Kelli", "F."), "Johnson", kelli.johnson@noaa.gov, role = "aut")
+    person(c("Christine", "C."), "Stawitz", role = c("aut", "cre")),
+    person("Bai", "Li", role = c("aut", "cre")),
+    person(c("Kelli", "F."), "Johnson",role = "aut")
     )
 Description: Collaborative tool to improve consistency in terminology and develop a framework of tools for fisheries science.
 License: `use_gpl3_license()` 
