@@ -1,6 +1,6 @@
 #' Forecast
 #'
-#' A probabilistic statement about future events.
+#' A probabilistic statement about future events based on what will happen.
 #'
 #' @format
 #' \describe{

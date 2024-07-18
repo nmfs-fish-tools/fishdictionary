@@ -1,11 +1,49 @@
+development:
+  mode: auto
+
+reference:
+- title: Dictionary Terms
+  contents:
+  - AgeComposition
+  - Biomass
+  - Catch
+  - CatchPerUnitEffort
+  - Cohort
+  - FishingMortalityAtMaximumSustainableYield
+  - Forecast
+  - InstantaneousFishingMortalityRate
+  - InstaneousMortalityRate
+  - Landings
+  - LengthComposition
+  - MaximumSustainableYield
+  - NaturalLogOfUnfishedRecruitment
+  - NumbersAtAge
+  - PlusGroup
+  - Projection
+  - Recruits
+  - Sex
+  - SpawnerPerRecruit
+  - SpawningBiomass
+  - Unfished
+  - Weight
+  
+- title: R Functions
+  contents:
+  - add_object
+  - read_in
+  - shiny_dd
+  - validate_Rd
+  
+
 navbar:
   structure:
     left:
     - home
     - reference
+    - articles
+    right:
     - github
     - issue
-    - article
 
   components:
     home:
@@ -13,20 +51,17 @@ navbar:
       href: index.html
 
     reference:
-      text: Functions
+      text: Reference
       icon: far fa-file-code fa-lg
       href: reference/index.html
-
+    
     github:
       text: Source Code
       icon: fab fa-github fa-lg
-      href: https://github.com/nmfs-fish-tools/data_dictionary/
-
+      href: https://github.com/nmfs-fish-tools/fishdictionary
+    
     issue:
       text: Issues
       icon: fas fa-question-circle fa-lg
-      href: https://github.com/nmfs-fish-tools/data_dictionary/issues/
-
-    articles:
-      text: Vignettes
-      icon: fas fa-file-contract fa-lg
+      href: https://github.com/nmfs-fish-tools/fishdictionary/issues
+      

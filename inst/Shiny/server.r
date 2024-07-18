@@ -1,7 +1,7 @@
 # Define server logic required to draw a histogram ----
 server <- function(input, output, session) {
   require(jsonlite)
-  library(stockassessmentdictionary)
+  library(fishdictionary)
   require(ggplot2)
   require(shiny)
 
@@ -10,7 +10,7 @@ server <- function(input, output, session) {
     unlink(tmp) })
 
   rd_database <- reactive({
-    tools::Rd_db(package = "stockassessmentdictionary")
+    tools::Rd_db(package = "fishdictionary")
   })
 
   output$choose_topic <- renderUI({
@@ -22,11 +22,11 @@ server <- function(input, output, session) {
     rdfile <- paste0(input$Term, ".Rd")
     req(rdfile %in% names(rd_database()))
     tools::Rd2HTML(rd_database()[[rdfile]], tmp,
-    package = "stockassessmentdictionary")
+    package = "fishdictionary")
     htmltools::includeHTML(tmp)})
 
   output$foodweb <- renderPlot({
-    mvbutils::foodweb(where = "package:stockassessmentdictionary",
+    mvbutils::foodweb(where = "package:fishdictionary",
      prune = input$Term)
   })
 }

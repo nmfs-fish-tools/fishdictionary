@@ -19,6 +19,6 @@ it depends on an assumption about future catches.}
 Forecast
 }
 \description{
-A probabilistic statement about future events.
+A probabilistic statement about future events based on what will happen.
 }
 \keyword{datasets}

@@ -1,5 +1,5 @@
 require(shiny)
-require(stockassessmentdictionary)
+require(fishdictionary)
 ui <- fluidPage(
   # includeCSS("extra.css"),
   includeCSS("nmfs-styles.css"),
