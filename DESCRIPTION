@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: c(
     person(given = c("Chantel", "R."), family = "Wetzel", email = "chantel.wetzel@noaa.gov", role = "aut"),
     person(given = c("Christine", "C."), family = "Stawitz",  email = "christine.stawitz@noaa.gov", role = c("aut", "cre")),
-    person(given = "Bai",  family = "Li",  email = "bai.li@noaa.gov", role = c("aut", "cre")),
+    person(given = "Bai",  family = "Li",  email = "bai.li@noaa.gov", role = c("aut")),
     person(given = c("Kelli", "F."),  family = "Johnson",  email = "kelli.johnson@noaa.gov", role = "aut")
     )
 Description: Collaborative tool to improve consistency in terminology and develop a framework of tools for fisheries science.
